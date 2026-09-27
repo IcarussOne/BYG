@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/sepinite_stonebrick_carved",
+    "particle": "byg:blocks/sepinite_stonebrick_carved"
+  }
+}

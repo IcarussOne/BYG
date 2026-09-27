@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:cherry_log"
+    },
+    "facing=south": {
+      "model": "byg:cherry_log"
+    },
+    "facing=north": {
+      "model": "byg:cherry_log"
+    },
+    "facing=east": {
+      "model": "byg:cherry_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:cherry_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:cherry_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:cherry_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

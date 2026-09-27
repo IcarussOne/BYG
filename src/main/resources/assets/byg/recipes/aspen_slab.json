@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "aspen"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:aspen_planks"
+    },
+    "1": {
+      "item": "byg:aspen_planks"
+    },
+    "2": {
+      "item": "byg:aspen_planks"
+    }
+  },
+  "result": {
+    "item": "byg:aspen_slab",
+    "count": 6
+  }
+}

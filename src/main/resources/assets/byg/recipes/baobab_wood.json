@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "baobab" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:baobab_log"
+    },
+    {
+      "item": "byg:baobab_log"
+    },
+    {
+      "item": "byg:baobab_log"
+    },
+    {
+      "item": "byg:baobab_log"
+    }
+  ],
+  "result": {
+    "item": "byg:baobab_wood",
+    "count": 3
+  }
+}

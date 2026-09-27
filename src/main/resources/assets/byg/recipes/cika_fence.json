@@ -1,0 +1,35 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "cika" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:cika_planks"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "2": {
+      "item": "byg:cika_planks"
+    },
+    "3": {
+      "item": "byg:cika_planks"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "5": {
+      "item": "byg:cika_planks"
+    }
+  },
+  "result": {
+    "item": "byg:cika_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sodalite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:sodalite_bricks"
+    },
+    "1": {
+      "item": "byg:sodalite_bricks"
+    },
+    "2": {
+      "item": "byg:sodalite_bricks"
+    },
+    "3": {
+      "item": "byg:sodalite_bricks"
+    },
+    "4": {
+      "item": "byg:sodalite_bricks"
+    },
+    "5": {
+      "item": "byg:sodalite_bricks"
+    }
+  },
+  "result": {
+    "item": "byg:sodalite_brick_walls",
+    "count": 6
+  }
+}

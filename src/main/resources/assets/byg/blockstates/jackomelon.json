@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:jackomelon"
+    },
+    "facing=north": {
+      "model": "byg:jackomelon"
+    },
+    "facing=east": {
+      "model": "byg:jackomelon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:jackomelon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:jackomelon",
+      "y": 270
+    }
+  }
+}

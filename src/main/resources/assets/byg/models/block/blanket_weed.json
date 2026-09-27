@@ -1,0 +1,8 @@
+{
+  "parent": "byg:leafmodel",
+  "textures": {
+    "all": "byg:blocks/blanket_weed",
+    "particle": "byg:blocks/blanket_weed",
+    "plant_leaf_pile1": "byg:blocks/blanket_weed"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "holly" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:holly_planks"
+    },
+    "1": {
+      "item": "byg:holly_planks"
+    },
+    "2": {
+      "item": "byg:holly_planks"
+    }
+  },
+  "result": {
+    "item": "byg:holly_slab",
+    "count": 6
+  }
+}

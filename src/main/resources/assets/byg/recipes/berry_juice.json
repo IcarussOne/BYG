@@ -1,0 +1,37 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "food" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:wooden_mortar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "berry"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "berry"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "berry"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "berry"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "berry"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "byg:berry_juice",
+    "count": 1
+  }
+}

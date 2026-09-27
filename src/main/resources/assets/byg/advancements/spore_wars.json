@@ -1,0 +1,20 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "glowshroom" }, { "type": "byg:biome_content_enabled", "set": "fungal_zombie" }],
+  "display": {
+    "icon": { "item": "byg:blue_glowshroom" },
+    "title": { "translate": "advancements.byg.spore_wars.title" },
+    "description": { "translate": "advancements.byg.spore_wars.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "kill_fungal_zombie": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": { "type": "byg:fungalzombie" }
+      }
+    }
+  }
+}

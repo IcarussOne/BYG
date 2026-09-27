@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:blanket_weed"
+    },
+    "facing=north": {
+      "model": "byg:blanket_weed"
+    },
+    "facing=east": {
+      "model": "byg:blanket_weed",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:blanket_weed",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:blanket_weed",
+      "y": 270
+    }
+  }
+}

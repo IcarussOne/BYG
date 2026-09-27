@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:palm_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:palmslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:palm_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:palm_planks"
+    },
+    "inventory": {
+      "model": "byg:palm_slab"
+    }
+  }
+}

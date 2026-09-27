@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "byg:blocks/jacaranda_planks",
+    "top": "byg:blocks/jacaranda_planks",
+    "side": "byg:blocks/jacaranda_planks",
+    "particle": "byg:blocks/jacaranda_planks"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "witch_hazel" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:witch_hazel_log"
+    },
+    {
+      "item": "byg:witch_hazel_log"
+    },
+    {
+      "item": "byg:witch_hazel_log"
+    },
+    {
+      "item": "byg:witch_hazel_log"
+    }
+  ],
+  "result": {
+    "item": "byg:witch_hazel_wood",
+    "count": 3
+  }
+}

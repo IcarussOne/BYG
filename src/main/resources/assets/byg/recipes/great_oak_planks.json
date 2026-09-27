@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "great_oak" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:great_oak_log"
+    }
+  ],
+  "result": {
+    "item": "byg:great_oak_planks",
+    "count": 4
+  }
+}

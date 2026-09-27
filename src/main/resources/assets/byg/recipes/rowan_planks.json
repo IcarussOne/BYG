@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rowan" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:rowan_log"
+    }
+  ],
+  "result": {
+    "item": "byg:rowan_planks",
+    "count": 4
+  }
+}

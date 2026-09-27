@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "holly" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:holly_log"
+    },
+    {
+      "item": "byg:holly_log"
+    },
+    {
+      "item": "byg:holly_log"
+    },
+    {
+      "item": "byg:holly_log"
+    }
+  ],
+  "result": {
+    "item": "byg:holly_wood",
+    "count": 3
+  }
+}

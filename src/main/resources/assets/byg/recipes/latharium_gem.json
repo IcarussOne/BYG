@@ -1,0 +1,19 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:latharium_block"
+    }
+  ],
+  "result": {
+    "item": "byg:latharium_gem",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "latharium"
+    }
+  ]
+}

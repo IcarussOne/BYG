@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:ironwood_log"
+    },
+    "facing=south": {
+      "model": "byg:ironwood_log"
+    },
+    "facing=north": {
+      "model": "byg:ironwood_log"
+    },
+    "facing=east": {
+      "model": "byg:ironwood_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:ironwood_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:ironwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:ironwood_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

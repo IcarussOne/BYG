@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "byg:blocks/witch_hazel_planks",
+    "top": "byg:blocks/witch_hazel_planks",
+    "side": "byg:blocks/witch_hazel_planks",
+    "particle": "byg:blocks/witch_hazel_planks"
+  }
+}

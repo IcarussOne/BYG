@@ -1,0 +1,74 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "blueberry" }, { "type": "byg:biome_content_enabled", "set": "strawberry" }, { "type": "byg:biome_content_enabled", "set": "maple" }],
+  "display": {
+    "icon": {
+      "item": "byg:blueberry_pie"
+    },
+    "title": {
+      "translate": "advancements.byg.sweet_tooth.title"
+    },
+    "description": {
+      "translate": "advancements.byg.sweet_tooth.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "blueberry_pie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:blueberry_pie"
+          }
+        ]
+      }
+    },
+    "green_apple_pie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:green_apple_pie"
+          }
+        ]
+      }
+    },
+    "strawberry_pie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:strawberry_pie"
+          }
+        ]
+      }
+    },
+    "maple_pancakes": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:maple_pancakes"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blueberry_pie"
+    ],
+    [
+      "green_apple_pie"
+    ],
+    [
+      "strawberry_pie"
+    ],
+    [
+      "maple_pancakes"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rainbow_eucalyptus" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    },
+    "1": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    },
+    "2": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    },
+    "3": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    },
+    "4": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    },
+    "5": {
+      "item": "byg:rainbow_eucalyptus_wood"
+    }
+  },
+  "result": {
+    "item": "byg:rainbow_eucalyptus_wood_wall",
+    "count": 6
+  }
+}

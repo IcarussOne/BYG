@@ -1,0 +1,31 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sepinite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "byg:sepinite"
+    },
+    "3": {
+      "item": "minecraft:clay_ball"
+    },
+    "4": {
+      "item": "byg:sepinite"
+    },
+    "5": {
+      "item": "minecraft:clay_ball"
+    },
+    "7": {
+      "item": "byg:sepinite"
+    }
+  },
+  "result": {
+    "item": "byg:sepinite_pillars",
+    "count": 3
+  }
+}

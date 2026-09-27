@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=dandelion": {
+      "model": "byg:baobab_sapling"
+    }
+  }
+}

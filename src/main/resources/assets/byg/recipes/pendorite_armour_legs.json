@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "pendorite"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "pendorite"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:pendorite_gem"
+    },
+    "1": {
+      "item": "byg:pendorite_gem"
+    },
+    "2": {
+      "item": "byg:pendorite_gem"
+    },
+    "3": {
+      "item": "byg:pendorite_gem"
+    },
+    "5": {
+      "item": "byg:pendorite_gem"
+    },
+    "6": {
+      "item": "byg:pendorite_gem"
+    },
+    "8": {
+      "item": "byg:pendorite_gem"
+    }
+  },
+  "result": {
+    "item": "byg:pendorite_armour_legs",
+    "count": 1
+  }
+}

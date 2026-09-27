@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "byg:blocks/cherry_planks",
+    "top": "byg:blocks/cherry_planks",
+    "side": "byg:blocks/cherry_planks",
+    "particle": "byg:blocks/cherry_planks"
+  }
+}

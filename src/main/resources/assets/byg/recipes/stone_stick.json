@@ -1,0 +1,18 @@
+{
+  "conditions": [{ "type": "byg:ore_content_enabled", "any": ["kasai", "pendorite"] }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone",
+      "data": 0
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "result": {
+    "item": "byg:stone_stick",
+    "count": 4
+  }
+}

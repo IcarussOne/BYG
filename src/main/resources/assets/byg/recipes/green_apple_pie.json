@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "skyris" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:green_apple"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "byg:green_apple"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "byg:green_apple_pie",
+    "count": 1
+  }
+}

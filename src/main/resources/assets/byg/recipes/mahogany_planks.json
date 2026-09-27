@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "mahogany" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:mahogany_log"
+    }
+  ],
+  "result": {
+    "item": "byg:mahogany_planks",
+    "count": 4
+  }
+}

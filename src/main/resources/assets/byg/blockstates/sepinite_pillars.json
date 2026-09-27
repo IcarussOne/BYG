@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:sepinite_pillars"
+    },
+    "facing=south": {
+      "model": "byg:sepinite_pillars"
+    },
+    "facing=north": {
+      "model": "byg:sepinite_pillars"
+    },
+    "facing=east": {
+      "model": "byg:sepinite_pillars",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:sepinite_pillars",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:sepinite_pillars",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:sepinite_pillars",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

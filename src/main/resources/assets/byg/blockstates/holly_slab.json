@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:holly_slab" },
+    "double=false,half=top": { "model": "byg:hollyslab_top" },
+    "double=true,half=bottom": { "model": "byg:holly_planks" },
+    "double=true,half=top": { "model": "byg:holly_planks" },
+    "inventory": { "model": "byg:holly_slab" }
+  }
+}

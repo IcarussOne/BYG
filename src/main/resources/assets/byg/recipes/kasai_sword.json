@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "kasai"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:kasai_ingot"
+    },
+    {
+      "item": "byg:kasai_ingot"
+    },
+    {
+      "item": "byg:stone_stick"
+    }
+  ],
+  "result": {
+    "item": "byg:kasai_sword",
+    "count": 1
+  }
+}

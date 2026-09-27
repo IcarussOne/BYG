@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "mangrove" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:mangrove_log"
+    }
+  ],
+  "result": {
+    "item": "byg:mangrove_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=dandelion": {
+      "model": "byg:blue_enchanted_sapling"
+    }
+  }
+}

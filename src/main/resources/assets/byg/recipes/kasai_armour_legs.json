@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "kasai"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "1": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "2": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "3": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "5": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "6": {
+      "item": "byg:kasai_chain_plating"
+    },
+    "8": {
+      "item": "byg:kasai_chain_plating"
+    }
+  },
+  "result": {
+    "item": "byg:kasai_armour_legs",
+    "count": 1
+  }
+}

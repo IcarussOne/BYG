@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sepinite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:sepinite_bricks"
+    },
+    "1": {
+      "item": "byg:sepinite_bricks"
+    },
+    "2": {
+      "item": "byg:sepinite_bricks"
+    },
+    "3": {
+      "item": "byg:sepinite_bricks"
+    },
+    "4": {
+      "item": "byg:sepinite_bricks"
+    },
+    "5": {
+      "item": "byg:sepinite_bricks"
+    }
+  },
+  "result": {
+    "item": "byg:sepinite_walls",
+    "count": 6
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "witch_hazel" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "3": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "4": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "6": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "7": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "8": {
+      "item": "byg:witch_hazel_planks"
+    }
+  },
+  "result": {
+    "item": "byg:witch_hazel_stairs",
+    "count": 4
+  }
+}

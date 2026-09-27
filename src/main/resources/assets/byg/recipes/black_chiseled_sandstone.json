@@ -1,0 +1,17 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "black_sand" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:black_sandstone"
+    },
+    {
+      "item": "byg:black_sandstone"
+    }
+  ],
+  "result": {
+    "item": "byg:black_chiseled_sandstone",
+    "count": 1
+  }
+}

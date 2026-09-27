@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/stripped_zelkova_log",
+    "up": "byg:blocks/stripped_zelkova_log",
+    "north": "byg:blocks/stripped_zelkova_log",
+    "east": "byg:blocks/stripped_zelkova_log",
+    "south": "byg:blocks/stripped_zelkova_log",
+    "west": "byg:blocks/stripped_zelkova_log",
+    "particle": "byg:blocks/stripped_zelkova_log"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:nether_furnace"
+    },
+    "facing=north": {
+      "model": "byg:nether_furnace"
+    },
+    "facing=east": {
+      "model": "byg:nether_furnace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:nether_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:nether_furnace",
+      "y": 270
+    }
+  }
+}

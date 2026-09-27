@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=dandelion": {
+      "model": "byg:orange_amaranth"
+    }
+  }
+}

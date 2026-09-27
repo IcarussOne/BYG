@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:witch_hazel_slab" },
+    "double=false,half=top": { "model": "byg:witchhazelslab_top" },
+    "double=true,half=bottom": { "model": "byg:witch_hazel_planks" },
+    "double=true,half=top": { "model": "byg:witch_hazel_planks" },
+    "inventory": { "model": "byg:witch_hazel_slab" }
+  }
+}

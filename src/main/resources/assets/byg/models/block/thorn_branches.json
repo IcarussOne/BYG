@@ -1,0 +1,10 @@
+{
+  "parent": "byg:thorn_block",
+  "textures": {
+    "all": "byg:blocks/thorn_block_side",
+    "particle": "byg:blocks/thorn_block_side",
+    "thorn_block_side": "byg:blocks/thorn_block_side",
+    "thorn_block_pricks": "byg:blocks/thorn_block_pricks",
+    "thorn_block_top": "byg:blocks/thorn_block_top"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "zelkova" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:zelkova_planks"
+    },
+    "3": {
+      "item": "byg:zelkova_planks"
+    },
+    "4": {
+      "item": "byg:zelkova_planks"
+    },
+    "6": {
+      "item": "byg:zelkova_planks"
+    },
+    "7": {
+      "item": "byg:zelkova_planks"
+    },
+    "8": {
+      "item": "byg:zelkova_planks"
+    }
+  },
+  "result": {
+    "item": "byg:zelkova_stairs",
+    "count": 4
+  }
+}

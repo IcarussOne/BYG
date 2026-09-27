@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "palo_verde" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:palo_verde_wood"
+    },
+    "1": {
+      "item": "byg:palo_verde_wood"
+    },
+    "2": {
+      "item": "byg:palo_verde_wood"
+    },
+    "3": {
+      "item": "byg:palo_verde_wood"
+    },
+    "4": {
+      "item": "byg:palo_verde_wood"
+    },
+    "5": {
+      "item": "byg:palo_verde_wood"
+    }
+  },
+  "result": {
+    "item": "byg:palo_verde_wood_wall",
+    "count": 6
+  }
+}

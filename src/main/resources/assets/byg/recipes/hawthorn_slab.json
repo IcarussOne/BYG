@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "hawthorn" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:hawthorn_planks"
+    },
+    "1": {
+      "item": "byg:hawthorn_planks"
+    },
+    "2": {
+      "item": "byg:hawthorn_planks"
+    }
+  },
+  "result": {
+    "item": "byg:hawthorn_slab",
+    "count": 6
+  }
+}

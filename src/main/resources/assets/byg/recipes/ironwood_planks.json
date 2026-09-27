@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "ironwood" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:ironwood_log"
+    }
+  ],
+  "result": {
+    "item": "byg:ironwood_planks",
+    "count": 4
+  }
+}

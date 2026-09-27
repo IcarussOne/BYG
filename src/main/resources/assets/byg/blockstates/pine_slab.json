@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:pine_slab" },
+    "double=false,half=top": { "model": "byg:pineslab_top" },
+    "double=true,half=bottom": { "model": "byg:pine_planks" },
+    "double=true,half=top": { "model": "byg:pine_planks" },
+    "inventory": { "model": "byg:pine_slab" }
+  }
+}

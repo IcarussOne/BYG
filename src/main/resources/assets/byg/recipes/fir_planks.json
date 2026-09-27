@@ -1,0 +1,15 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "fir" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:fir_log"
+    }
+  ],
+  "result": {
+    "item": "byg:fir_planks",
+    "count": 4
+  }
+}
+

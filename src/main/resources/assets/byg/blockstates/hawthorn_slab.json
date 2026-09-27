@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:hawthorn_slab" },
+    "double=false,half=top": { "model": "byg:hawthornslab_top" },
+    "double=true,half=bottom": { "model": "byg:hawthorn_planks" },
+    "double=true,half=top": { "model": "byg:hawthorn_planks" },
+    "inventory": { "model": "byg:hawthorn_slab" }
+  }
+}

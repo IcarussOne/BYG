@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:great_oak_log"
+    },
+    "facing=south": {
+      "model": "byg:great_oak_log"
+    },
+    "facing=north": {
+      "model": "byg:great_oak_log"
+    },
+    "facing=east": {
+      "model": "byg:great_oak_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:great_oak_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:great_oak_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:great_oak_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

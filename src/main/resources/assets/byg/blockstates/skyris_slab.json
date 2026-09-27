@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:skyris_slab" },
+    "double=false,half=top": { "model": "byg:skyrisslab_top" },
+    "double=true,half=bottom": { "model": "byg:skyris_planks" },
+    "double=true,half=top": { "model": "byg:skyris_planks" },
+    "inventory": { "model": "byg:skyris_slab" }
+  }
+}

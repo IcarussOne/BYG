@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "byg:baobabstage0"
+    },
+    "stage=1": {
+      "model": "byg:baobabastage1"
+    },
+    "stage=2": {
+      "model": "byg:baobabstage2"
+    },
+    "stage=3": {
+      "model": "byg:baobabstage3"
+    },
+    "stage=4": {
+      "model": "byg:baobab_fruit_block"
+    }
+  }
+}

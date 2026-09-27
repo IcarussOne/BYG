@@ -1,0 +1,20 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "food" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:pumpkin"
+    },
+    {
+      "item": "minecraft:pumpkin"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "byg:pumpkin_mash",
+    "count": 3
+  }
+}

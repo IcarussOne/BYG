@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "enchanted_tree" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:enchanted_planks"
+    },
+    "3": {
+      "item": "byg:enchanted_planks"
+    },
+    "4": {
+      "item": "byg:enchanted_planks"
+    },
+    "6": {
+      "item": "byg:enchanted_planks"
+    },
+    "7": {
+      "item": "byg:enchanted_planks"
+    },
+    "8": {
+      "item": "byg:enchanted_planks"
+    }
+  },
+  "result": {
+    "item": "byg:blue_enchanted_stairs",
+    "count": 4
+  }
+}

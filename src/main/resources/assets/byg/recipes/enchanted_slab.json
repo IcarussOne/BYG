@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "enchanted_tree"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:enchanted_planks"
+    },
+    "1": {
+      "item": "byg:enchanted_planks"
+    },
+    "2": {
+      "item": "byg:enchanted_planks"
+    }
+  },
+  "result": {
+    "item": "byg:enchanted_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "mahogany" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:mahogany_wood"
+    },
+    "1": {
+      "item": "byg:mahogany_wood"
+    },
+    "2": {
+      "item": "byg:mahogany_wood"
+    },
+    "3": {
+      "item": "byg:mahogany_wood"
+    },
+    "4": {
+      "item": "byg:mahogany_wood"
+    },
+    "5": {
+      "item": "byg:mahogany_wood"
+    }
+  },
+  "result": {
+    "item": "byg:mahogany_wood_wall",
+    "count": 6
+  }
+}

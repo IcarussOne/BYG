@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "byg:thorn_branches"
+    },
+    "facing=east": {
+      "model": "byg:thorn_branches",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:thorn_branches",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

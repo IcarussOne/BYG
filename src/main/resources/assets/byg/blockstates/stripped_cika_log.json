@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:stripped_cika_log"
+    },
+    "facing=south": {
+      "model": "byg:stripped_cika_log"
+    },
+    "facing=north": {
+      "model": "byg:stripped_cika_log"
+    },
+    "facing=east": {
+      "model": "byg:stripped_cika_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:stripped_cika_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:stripped_cika_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:stripped_cika_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

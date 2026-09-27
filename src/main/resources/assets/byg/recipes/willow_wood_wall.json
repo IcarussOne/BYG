@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "willow" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:willow_wood"
+    },
+    "1": {
+      "item": "byg:willow_wood"
+    },
+    "2": {
+      "item": "byg:willow_wood"
+    },
+    "3": {
+      "item": "byg:willow_wood"
+    },
+    "4": {
+      "item": "byg:willow_wood"
+    },
+    "5": {
+      "item": "byg:willow_wood"
+    }
+  },
+  "result": {
+    "item": "byg:willow_wood_wall",
+    "count": 6
+  }
+}

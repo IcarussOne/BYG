@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "cika" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:cika_log"
+    }
+  ],
+  "result": {
+    "item": "byg:cika_planks",
+    "count": 4
+  }
+}

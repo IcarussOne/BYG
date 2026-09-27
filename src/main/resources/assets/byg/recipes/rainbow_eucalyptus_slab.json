@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rainbow_eucalyptus" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    },
+    "1": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    },
+    "2": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    }
+  },
+  "result": {
+    "item": "byg:rainbow_eucalyptus_slab",
+    "count": 6
+  }
+}

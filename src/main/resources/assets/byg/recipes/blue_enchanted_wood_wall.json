@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "enchanted_tree" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:blue_enchanted_wood"
+    },
+    "1": {
+      "item": "byg:blue_enchanted_wood"
+    },
+    "2": {
+      "item": "byg:blue_enchanted_wood"
+    },
+    "3": {
+      "item": "byg:blue_enchanted_wood"
+    },
+    "4": {
+      "item": "byg:blue_enchanted_wood"
+    },
+    "5": {
+      "item": "byg:blue_enchanted_wood"
+    }
+  },
+  "result": {
+    "item": "byg:blue_enchanted_wood_wall",
+    "count": 6
+  }
+}

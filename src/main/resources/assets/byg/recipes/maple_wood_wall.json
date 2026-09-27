@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "maple" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:maple_wood"
+    },
+    "1": {
+      "item": "byg:maple_wood"
+    },
+    "2": {
+      "item": "byg:maple_wood"
+    },
+    "3": {
+      "item": "byg:maple_wood"
+    },
+    "4": {
+      "item": "byg:maple_wood"
+    },
+    "5": {
+      "item": "byg:maple_wood"
+    }
+  },
+  "result": {
+    "item": "byg:maple_wood_wall",
+    "count": 6
+  }
+}

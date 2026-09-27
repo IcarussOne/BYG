@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "byg:blocks/rudo_stage_three",
+    "particle": "byg:blocks/rudo_stage_three"
+  }
+}

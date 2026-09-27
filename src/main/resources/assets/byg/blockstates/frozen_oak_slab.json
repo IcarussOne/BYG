@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:frozen_oak_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:frozenoakslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:frozen_oak_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:frozen_oak_planks"
+    },
+    "inventory": {
+      "model": "byg:frozen_oak_slab"
+    }
+  }
+}

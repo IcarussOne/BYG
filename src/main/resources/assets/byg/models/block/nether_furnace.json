@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/nether_furnace_top",
+    "up": "byg:blocks/nether_furnace_top",
+    "north": "byg:blocks/nether_furnace_side_off",
+    "east": "byg:blocks/nether_furnace_top",
+    "south": "byg:blocks/nether_furnace_top",
+    "west": "byg:blocks/nether_furnace_top",
+    "particle": "byg:blocks/nether_furnace_top"
+  }
+}

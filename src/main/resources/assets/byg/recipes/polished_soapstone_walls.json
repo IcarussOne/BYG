@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "soapstone" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:polished_soapstone"
+    },
+    "1": {
+      "item": "byg:polished_soapstone"
+    },
+    "2": {
+      "item": "byg:polished_soapstone"
+    },
+    "3": {
+      "item": "byg:polished_soapstone"
+    },
+    "4": {
+      "item": "byg:polished_soapstone"
+    },
+    "5": {
+      "item": "byg:polished_soapstone"
+    }
+  },
+  "result": {
+    "item": "byg:polished_soapstone_walls",
+    "count": 6
+  }
+}

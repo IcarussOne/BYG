@@ -1,0 +1,43 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "baobab" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:baobab_planks"
+    },
+    "1": {
+      "item": "byg:baobab_planks"
+    },
+    "2": {
+      "item": "byg:baobab_planks"
+    },
+    "3": {
+      "item": "minecraft:book"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "minecraft:book"
+    },
+    "6": {
+      "item": "byg:baobab_planks"
+    },
+    "7": {
+      "item": "byg:baobab_planks"
+    },
+    "8": {
+      "item": "byg:baobab_planks"
+    }
+  },
+  "result": {
+    "item": "byg:baobab_bookshelf",
+    "count": 1
+  }
+}

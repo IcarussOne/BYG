@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/sodalite_polished",
+    "particle": "byg:blocks/sodalite_polished"
+  }
+}

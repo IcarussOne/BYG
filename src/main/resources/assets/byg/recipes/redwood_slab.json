@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "redwood" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:redwood_planks"
+    },
+    "1": {
+      "item": "byg:redwood_planks"
+    },
+    "2": {
+      "item": "byg:redwood_planks"
+    }
+  },
+  "result": {
+    "item": "byg:redwood_slab",
+    "count": 6
+  }
+}

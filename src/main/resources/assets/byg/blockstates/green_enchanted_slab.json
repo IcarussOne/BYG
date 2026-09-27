@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:green_enchanted_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:greenenchantedslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:green_enchanted_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:green_enchanted_planks"
+    },
+    "inventory": {
+      "model": "byg:green_enchanted_slab"
+    }
+  }
+}

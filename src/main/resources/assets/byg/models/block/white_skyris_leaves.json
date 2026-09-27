@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/white_skyris_leaves",
+    "particle": "byg:blocks/white_skyris_leaves"
+  }
+}

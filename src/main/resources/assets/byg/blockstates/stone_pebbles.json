@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:stone_pebbles"
+    },
+    "facing=north": {
+      "model": "byg:stone_pebbles"
+    },
+    "facing=east": {
+      "model": "byg:stone_pebbles",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:stone_pebbles",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:stone_pebbles",
+      "y": 270
+    }
+  }
+}

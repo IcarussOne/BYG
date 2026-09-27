@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:aspen_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:aspenslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:aspen_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:aspen_planks"
+    },
+    "inventory": {
+      "model": "byg:aspen_slab"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:kasai_block"
+    }
+  ],
+  "result": {
+    "item": "byg:kasai_ingot",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ]
+}

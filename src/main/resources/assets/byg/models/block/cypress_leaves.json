@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/cypress_leaves",
+    "up": "byg:blocks/cypress_leaves",
+    "north": "byg:blocks/cypress_leaves",
+    "east": "byg:blocks/cypress_leaves",
+    "south": "byg:blocks/cypress_leaves",
+    "west": "byg:blocks/cypress_leaves",
+    "particle": "byg:blocks/cypress_leaves"
+  }
+}

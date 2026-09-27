@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:carved_melon"
+    },
+    "facing=north": {
+      "model": "byg:carved_melon"
+    },
+    "facing=east": {
+      "model": "byg:carved_melon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:carved_melon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:carved_melon",
+      "y": 270
+    }
+  }
+}

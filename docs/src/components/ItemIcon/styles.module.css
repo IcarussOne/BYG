@@ -1,0 +1,58 @@
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  display: block;
+  /* Overrides the generic "article img" block-style frame; the card below supplies its own. */
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: auto !important;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  float: right;
+  margin: 0 0 0.75rem 1rem;
+  padding: 0.75rem;
+  border: 2px solid var(--byg-border, rgba(0, 0, 0, 0.2));
+  border-radius: 8px;
+  background-color: var(--ifm-background-surface-color);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.caption {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin: 0 0 0.75rem 1rem;
+  padding: 0.5rem;
+  border: 2px dashed var(--ifm-color-emphasis-400);
+  border-radius: 8px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.missingInline {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+}

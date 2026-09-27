@@ -1,0 +1,26 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustMud"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustMud"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustMud"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustMud"
+    }
+  ],
+  "result": {
+    "item": "byg:mud_bricks",
+    "count": 1
+  }
+}

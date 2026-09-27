@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    { "type": "byg:biome_content_enabled", "set": "enchanted_tree" },
+    { "type": "byg:ore_content_enabled", "ore": "latharium" }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:enchanted_planks"
+    },
+    {
+      "item": "byg:enchanted_planks"
+    }
+  ],
+  "result": {
+    "item": "byg:enchanted_stick",
+    "count": 4
+  }
+}

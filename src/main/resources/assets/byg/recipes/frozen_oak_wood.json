@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "frozen_oak" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:frozen_oak_log"
+    },
+    {
+      "item": "byg:frozen_oak_log"
+    },
+    {
+      "item": "byg:frozen_oak_log"
+    },
+    {
+      "item": "byg:frozen_oak_log"
+    }
+  ],
+  "result": {
+    "item": "byg:frozen_oak_wood",
+    "count": 3
+  }
+}

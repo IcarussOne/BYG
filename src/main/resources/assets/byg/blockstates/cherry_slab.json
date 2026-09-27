@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:cherry_slab" },
+    "double=false,half=top": { "model": "byg:cherryslab_top" },
+    "double=true,half=bottom": { "model": "byg:cherry_planks" },
+    "double=true,half=top": { "model": "byg:cherry_planks" },
+    "inventory": { "model": "byg:cherry_slab" }
+  }
+}

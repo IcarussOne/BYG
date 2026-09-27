@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:flowers"
+    },
+    "facing=north": {
+      "model": "byg:flowers"
+    },
+    "facing=east": {
+      "model": "byg:flowers",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:flowers",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:flowers",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/black_sandstone_top",
+    "up": "byg:blocks/black_sandstone_top",
+    "north": "byg:blocks/black_chiseled_sandstone",
+    "east": "byg:blocks/black_chiseled_sandstone",
+    "south": "byg:blocks/black_chiseled_sandstone",
+    "west": "byg:blocks/black_chiseled_sandstone",
+    "particle": "byg:blocks/black_sandstone_top"
+  }
+}

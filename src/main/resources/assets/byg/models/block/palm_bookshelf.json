@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/palm_planks",
+    "up": "byg:blocks/palm_planks",
+    "north": "byg:blocks/palm_bookshelf",
+    "east": "byg:blocks/palm_bookshelf",
+    "south": "byg:blocks/palm_bookshelf",
+    "west": "byg:blocks/palm_bookshelf",
+    "particle": "byg:blocks/palm_planks"
+  }
+}

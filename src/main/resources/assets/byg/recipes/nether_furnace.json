@@ -1,0 +1,43 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "nether_furnace" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "1": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "2": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "3": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "4": {
+      "item": "minecraft:furnace"
+    },
+    "5": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "6": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "7": {
+      "item": "minecraft:red_nether_brick"
+    },
+    "8": {
+      "item": "minecraft:red_nether_brick"
+    }
+  },
+  "result": {
+    "item": "byg:nether_furnace",
+    "count": 1
+  }
+}

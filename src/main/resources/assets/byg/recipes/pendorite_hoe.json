@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "pendorite"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "pendorite"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:pendorite_gem"
+    },
+    {
+      "item": "byg:pendorite_gem"
+    },
+    {
+      "item": "byg:stone_stick"
+    },
+    {
+      "item": "byg:stone_stick"
+    }
+  ],
+  "result": {
+    "item": "byg:pendorite_hoe",
+    "count": 1
+  }
+}

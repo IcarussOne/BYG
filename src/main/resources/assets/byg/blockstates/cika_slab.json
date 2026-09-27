@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:cika_slab" },
+    "double=false,half=top": { "model": "byg:cikaslab_top" },
+    "double=true,half=bottom": { "model": "byg:cika_planks" },
+    "double=true,half=top": { "model": "byg:cika_planks" },
+    "inventory": { "model": "byg:cika_slab" }
+  }
+}

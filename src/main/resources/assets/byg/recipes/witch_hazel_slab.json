@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "witch_hazel" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "1": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "2": {
+      "item": "byg:witch_hazel_planks"
+    }
+  },
+  "result": {
+    "item": "byg:witch_hazel_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "byg:baobab_stage1",
+  "textures": {
+    "all": "byg:blocks/baobab_fruit_stem",
+    "particle": "byg:blocks/baobab_fruit_stem",
+    "0": "byg:blocks/baobab_fruit_stem"
+  }
+}

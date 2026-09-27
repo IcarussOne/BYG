@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "colored_sand" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:pink_sand"
+    },
+    {
+      "item": "byg:pink_sand"
+    },
+    {
+      "item": "byg:pink_sand"
+    },
+    {
+      "item": "byg:pink_sand"
+    }
+  ],
+  "result": {
+    "item": "byg:pink_sandstone",
+    "count": 1
+  }
+}

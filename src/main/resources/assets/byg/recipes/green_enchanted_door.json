@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "enchanted_tree" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "1": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "2": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "3": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "4": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "5": {
+      "item": "byg:green_enchanted_planks"
+    }
+  },
+  "result": {
+    "item": "byg:green_enchanted_door",
+    "count": 3
+  }
+}

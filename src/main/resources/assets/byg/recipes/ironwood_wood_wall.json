@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "ironwood"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:ironwood_wood"
+    },
+    "1": {
+      "item": "byg:ironwood_wood"
+    },
+    "2": {
+      "item": "byg:ironwood_wood"
+    },
+    "3": {
+      "item": "byg:ironwood_wood"
+    },
+    "4": {
+      "item": "byg:ironwood_wood"
+    },
+    "5": {
+      "item": "byg:ironwood_wood"
+    }
+  },
+  "result": {
+    "item": "byg:ironwood_wood_wall",
+    "count": 6
+  }
+}

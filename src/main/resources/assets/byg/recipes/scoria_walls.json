@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "scoria" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:scoria_bricks"
+    },
+    "1": {
+      "item": "byg:scoria_bricks"
+    },
+    "2": {
+      "item": "byg:scoria_bricks"
+    },
+    "3": {
+      "item": "byg:scoria_bricks"
+    },
+    "4": {
+      "item": "byg:scoria_bricks"
+    },
+    "5": {
+      "item": "byg:scoria_bricks"
+    }
+  },
+  "result": {
+    "item": "byg:scoria_walls",
+    "count": 6
+  }
+}

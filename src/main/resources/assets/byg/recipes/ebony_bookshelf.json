@@ -1,0 +1,43 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "ebony" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:ebony_planks"
+    },
+    "1": {
+      "item": "byg:ebony_planks"
+    },
+    "2": {
+      "item": "byg:ebony_planks"
+    },
+    "3": {
+      "item": "minecraft:book"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "minecraft:book"
+    },
+    "6": {
+      "item": "byg:ebony_planks"
+    },
+    "7": {
+      "item": "byg:ebony_planks"
+    },
+    "8": {
+      "item": "byg:ebony_planks"
+    }
+  },
+  "result": {
+    "item": "byg:ebony_bookshelf",
+    "count": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=south,fill=0": {
+      "model": "byg:maple_tap_0"
+    },
+    "facing=south,fill=1": {
+      "model": "byg:maple_tap_1"
+    },
+    "facing=south,fill=2": {
+      "model": "byg:maple_tap_2"
+    },
+    "facing=south,fill=3": {
+      "model": "byg:maple_tap_3"
+    },
+    "facing=west,fill=0": {
+      "model": "byg:maple_tap_0",
+      "y": 90
+    },
+    "facing=west,fill=1": {
+      "model": "byg:maple_tap_1",
+      "y": 90
+    },
+    "facing=west,fill=2": {
+      "model": "byg:maple_tap_2",
+      "y": 90
+    },
+    "facing=west,fill=3": {
+      "model": "byg:maple_tap_3",
+      "y": 90
+    },
+    "facing=north,fill=0": {
+      "model": "byg:maple_tap_0",
+      "y": 180
+    },
+    "facing=north,fill=1": {
+      "model": "byg:maple_tap_1",
+      "y": 180
+    },
+    "facing=north,fill=2": {
+      "model": "byg:maple_tap_2",
+      "y": 180
+    },
+    "facing=north,fill=3": {
+      "model": "byg:maple_tap_3",
+      "y": 180
+    },
+    "facing=east,fill=0": {
+      "model": "byg:maple_tap_0",
+      "y": 270
+    },
+    "facing=east,fill=1": {
+      "model": "byg:maple_tap_1",
+      "y": 270
+    },
+    "facing=east,fill=2": {
+      "model": "byg:maple_tap_2",
+      "y": 270
+    },
+    "facing=east,fill=3": {
+      "model": "byg:maple_tap_3",
+      "y": 270
+    }
+  }
+}

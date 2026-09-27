@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/glowcane_block_blue",
+    "particle": "byg:blocks/glowcane_block_blue"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "pendorite"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "pendorite"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:pendorite_gem"
+    },
+    "1": {
+      "item": "byg:pendorite_gem"
+    },
+    "2": {
+      "item": "byg:stone_stick"
+    }
+  },
+  "result": {
+    "item": "byg:pendorite_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "palm" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:palm_planks"
+    },
+    "3": {
+      "item": "byg:palm_planks"
+    },
+    "4": {
+      "item": "byg:palm_planks"
+    },
+    "6": {
+      "item": "byg:palm_planks"
+    },
+    "7": {
+      "item": "byg:palm_planks"
+    },
+    "8": {
+      "item": "byg:palm_planks"
+    }
+  },
+  "result": {
+    "item": "byg:palm_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "enchanted_tree" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:green_enchanted_planks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:planks",
+    "data": 0,
+    "count": 1
+  }
+}

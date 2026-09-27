@@ -1,0 +1,48 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:kasai_ingot"
+    },
+    "1": {
+      "item": "byg:kasai_ingot"
+    },
+    "2": {
+      "item": "byg:kasai_ingot"
+    },
+    "3": {
+      "item": "byg:kasai_ingot"
+    },
+    "4": {
+      "item": "byg:kasai_ingot"
+    },
+    "5": {
+      "item": "byg:kasai_ingot"
+    },
+    "6": {
+      "item": "byg:kasai_ingot"
+    },
+    "7": {
+      "item": "byg:kasai_ingot"
+    },
+    "8": {
+      "item": "byg:kasai_ingot"
+    }
+  },
+  "result": {
+    "item": "byg:kasai_block",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ]
+}

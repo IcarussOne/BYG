@@ -1,0 +1,37 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "latharium"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "latharium"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:latharium_gem"
+    },
+    "1": {
+      "item": "byg:latharium_gem"
+    },
+    "3": {
+      "item": "byg:enchanted_stick"
+    },
+    "5": {
+      "item": "byg:enchanted_stick"
+    }
+  },
+  "result": {
+    "item": "byg:latharium_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "ebony" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:ebony_log"
+    }
+  ],
+  "result": {
+    "item": "byg:ebony_planks",
+    "count": 4
+  }
+}

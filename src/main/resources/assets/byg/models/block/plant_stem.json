@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/plant_stem_top",
+    "up": "byg:blocks/plant_stem_top",
+    "north": "byg:blocks/plant_stem_side",
+    "east": "byg:blocks/plant_stem_side",
+    "south": "byg:blocks/plant_stem_side",
+    "west": "byg:blocks/plant_stem_side",
+    "particle": "byg:blocks/plant_stem_top"
+  }
+}

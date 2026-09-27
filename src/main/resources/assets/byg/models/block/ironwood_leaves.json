@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/ironwood_leaves",
+    "particle": "byg:blocks/ironwood_leaves"
+  }
+}

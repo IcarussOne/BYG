@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "cherry" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:cherry_planks"
+    },
+    "3": {
+      "item": "byg:cherry_planks"
+    },
+    "4": {
+      "item": "byg:cherry_planks"
+    },
+    "6": {
+      "item": "byg:cherry_planks"
+    },
+    "7": {
+      "item": "byg:cherry_planks"
+    },
+    "8": {
+      "item": "byg:cherry_planks"
+    }
+  },
+  "result": {
+    "item": "byg:cherry_stairs",
+    "count": 4
+  }
+}

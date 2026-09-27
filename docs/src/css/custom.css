@@ -1,0 +1,178 @@
+@import "./block-style.css";
+
+/**
+ * BYG palette, sampled from the logo globe:
+ *   ocean teal  #287f89 (dark #1f6269, deepest #19474e)
+ *   leaf green  #78ac45 (light #84bf4b, dark #5c8435)
+ *   mustard     #c0c045
+ */
+
+:root {
+  --byg-teal: #287f89;
+  --byg-teal-deep: #19474e;
+  --byg-green: #78ac45;
+  --byg-mustard: #c0c045;
+
+  --ifm-color-primary: #287f89;
+  --ifm-color-primary-dark: #247280;
+  --ifm-color-primary-darker: #226b74;
+  --ifm-color-primary-darkest: #1c585f;
+  --ifm-color-primary-light: #2d8c97;
+  --ifm-color-primary-lighter: #309aa5;
+  --ifm-color-primary-lightest: #38b0bd;
+
+  --ifm-link-hover-color: #5c8435;
+  --ifm-background-color: #f6f8f3;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-code-font-size: 95%;
+  --ifm-table-stripe-background: rgba(40, 127, 137, 0.05);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* The navbar and footer stay deep teal in both colour modes. */
+  --ifm-navbar-background-color: var(--byg-teal-deep);
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #b6dd8a;
+  --ifm-footer-background-color: #12363c;
+  --ifm-footer-link-hover-color: #b6dd8a;
+}
+
+/* For readability concerns, use a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4fb8c4;
+  --ifm-color-primary-dark: #38adba;
+  --ifm-color-primary-darker: #35a4b0;
+  --ifm-color-primary-darkest: #2b8790;
+  --ifm-color-primary-light: #66c1cc;
+  --ifm-color-primary-lighter: #73c6d0;
+  --ifm-color-primary-lightest: #96d5dc;
+
+  --ifm-link-hover-color: #a0d468;
+  --ifm-background-color: #0e1a1c;
+  --ifm-background-surface-color: #142629;
+  --ifm-table-stripe-background: rgba(79, 184, 196, 0.06);
+  --ifm-navbar-background-color: #0b2a2f;
+  --ifm-footer-background-color: #0a2226;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Keep the navbar title and toggle icons readable on the teal bar. */
+.navbar__title,
+.navbar__link,
+.navbar__toggle,
+.navbar .clean-btn {
+  color: #ffffff;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #b6dd8a;
+}
+
+/* Discord icon link in the navbar, left of the GitHub link. */
+.navbar-discord-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.navbar-discord-link:hover {
+  color: #b6dd8a;
+}
+
+/* CurseForge icon link in the navbar, left of the Discord icon. */
+.navbar-curseforge-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.navbar-curseforge-link:hover {
+  color: #b6dd8a;
+}
+
+/* Pixel-art logo: keep it crisp when scaled. */
+.navbar__logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+/* Green accent for the active sidebar entry and heading anchors. */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 3px solid var(--byg-green);
+}
+
+/* Mustard note admonitions match the logo's yellow accent. */
+.alert--secondary,
+.theme-admonition-note {
+  --ifm-alert-background-color: rgba(192, 192, 69, 0.15);
+  --ifm-alert-border-color: var(--byg-mustard);
+}
+
+/* Pixel font for the site title and page titles only; body text stays in the default font. */
+:root {
+  --byg-pixel-font: 'Silkscreen', 'Courier New', monospace;
+}
+
+.navbar__title,
+.theme-doc-markdown h1 {
+  font-family: var(--byg-pixel-font);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar__title {
+  font-size: 1.15rem;
+}
+
+.theme-doc-markdown h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+/* footer--dark sets its own background variable, so override it at that level. */
+.footer--dark {
+  --ifm-footer-background-color: #12363c;
+}
+
+[data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: #0a2226;
+}
+
+/* Keep the footer compact and let a biome screenshot do the visual work. */
+.footer {
+  --ifm-footer-padding-vertical: 1rem;
+}
+
+.footer__col {
+  margin-bottom: 0.5rem;
+}
+
+.footer__bottom > .margin-bottom--sm {
+  margin-bottom: 0.5rem !important;
+}
+
+.footer-biome {
+  width: min(380px, 100%);
+  margin: 0 auto;
+}
+
+.footer-biome img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #5b956d;
+}
+
+.footer-biome figcaption {
+  margin-top: 0.25rem;
+  color: #c9ded3;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}

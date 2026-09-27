@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:palm_log"
+    },
+    "facing=south": {
+      "model": "byg:palm_log"
+    },
+    "facing=north": {
+      "model": "byg:palm_log"
+    },
+    "facing=east": {
+      "model": "byg:palm_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:palm_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:palm_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:palm_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:ebony_slab" },
+    "double=false,half=top": { "model": "byg:ebonyslab_top" },
+    "double=true,half=bottom": { "model": "byg:ebony_planks" },
+    "double=true,half=top": { "model": "byg:ebony_planks" },
+    "inventory": { "model": "byg:ebony_slab" }
+  }
+}

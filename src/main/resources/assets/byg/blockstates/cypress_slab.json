@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:cypress_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:cypressslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:cypress_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:cypress_planks"
+    },
+    "inventory": {
+      "model": "byg:cypress_slab"
+    }
+  }
+}

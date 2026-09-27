@@ -1,0 +1,9 @@
+{
+  "parent": "byg:small_glowshroom",
+  "textures": {
+    "all": "byg:blocks/purple_glowshroom_block",
+    "particle": "byg:blocks/purple_glowshroom_block",
+    "purple_glowshroom_block": "byg:blocks/purple_glowshroom_block",
+    "glowshroom_stem": "byg:blocks/glowshroom_stem"
+  }
+}

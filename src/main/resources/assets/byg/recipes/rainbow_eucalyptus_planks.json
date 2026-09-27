@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rainbow_eucalyptus" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:rainbow_eucalyptus_log"
+    }
+  ],
+  "result": {
+    "item": "byg:rainbow_eucalyptus_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/oak_frozen_planks",
+    "up": "byg:blocks/oak_frozen_planks",
+    "north": "byg:blocks/oak_frozen_bookshelf",
+    "east": "byg:blocks/oak_frozen_bookshelf",
+    "south": "byg:blocks/oak_frozen_bookshelf",
+    "west": "byg:blocks/oak_frozen_bookshelf",
+    "particle": "byg:blocks/oak_frozen_planks"
+  }
+}

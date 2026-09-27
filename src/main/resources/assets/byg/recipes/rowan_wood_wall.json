@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "rowan"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:rowan_wood"
+    },
+    "1": {
+      "item": "byg:rowan_wood"
+    },
+    "2": {
+      "item": "byg:rowan_wood"
+    },
+    "3": {
+      "item": "byg:rowan_wood"
+    },
+    "4": {
+      "item": "byg:rowan_wood"
+    },
+    "5": {
+      "item": "byg:rowan_wood"
+    }
+  },
+  "result": {
+    "item": "byg:rowan_wood_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "great_oak" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:great_oak_planks"
+    },
+    {
+      "item": "byg:great_oak_planks"
+    },
+    {
+      "item": "byg:great_oak_planks"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "byg:great_oak_planks"
+    },
+    {
+      "item": "byg:great_oak_planks"
+    },
+    {
+      "item": "byg:great_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "byg:great_oak_bookshelf",
+    "count": 1
+  }
+}

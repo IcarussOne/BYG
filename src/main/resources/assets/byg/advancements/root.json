@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "item": "byg:byg_logo" },
+    "title": { "translate": "advancements.byg.root.title" },
+    "description": { "translate": "advancements.byg.root.description" },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

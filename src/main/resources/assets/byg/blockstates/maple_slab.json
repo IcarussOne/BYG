@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:maple_slab" },
+    "double=false,half=top": { "model": "byg:mapleslab_top" },
+    "double=true,half=bottom": { "model": "byg:maple_planks" },
+    "double=true,half=top": { "model": "byg:maple_planks" },
+    "inventory": { "model": "byg:maple_slab" }
+  }
+}

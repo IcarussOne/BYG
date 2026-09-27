@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "strawberry" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:strawberry"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "byg:strawberry"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "byg:strawberry_pie",
+    "count": 1
+  }
+}

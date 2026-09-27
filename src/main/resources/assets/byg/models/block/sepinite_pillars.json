@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/sepinite_pillars_top",
+    "up": "byg:blocks/sepinite_pillars_top",
+    "north": "byg:blocks/sepinite_pillars_side",
+    "east": "byg:blocks/sepinite_pillars_side",
+    "south": "byg:blocks/sepinite_pillars_side",
+    "west": "byg:blocks/sepinite_pillars_side",
+    "particle": "byg:blocks/sepinite_pillars_top"
+  }
+}

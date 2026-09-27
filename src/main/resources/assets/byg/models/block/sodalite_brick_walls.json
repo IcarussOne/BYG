@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "byg:blocks/sodalite_bricks",
+    "particle": "byg:blocks/sodalite_bricks"
+  }
+}

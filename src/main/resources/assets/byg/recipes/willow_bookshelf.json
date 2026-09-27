@@ -1,0 +1,43 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "willow" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:willow_planks"
+    },
+    "1": {
+      "item": "byg:willow_planks"
+    },
+    "2": {
+      "item": "byg:willow_planks"
+    },
+    "3": {
+      "item": "minecraft:book"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "minecraft:book"
+    },
+    "6": {
+      "item": "byg:willow_planks"
+    },
+    "7": {
+      "item": "byg:willow_planks"
+    },
+    "8": {
+      "item": "byg:willow_planks"
+    }
+  },
+  "result": {
+    "item": "byg:willow_bookshelf",
+    "count": 1
+  }
+}

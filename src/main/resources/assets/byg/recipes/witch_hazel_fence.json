@@ -1,0 +1,35 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "witch_hazel" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "2": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "3": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "5": {
+      "item": "byg:witch_hazel_planks"
+    }
+  },
+  "result": {
+    "item": "byg:witch_hazel_fence",
+    "count": 3
+  }
+}

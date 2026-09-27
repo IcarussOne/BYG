@@ -1,0 +1,39 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "tamrelite"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "tamrelite"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:tamrelite_gem"
+    },
+    "1": {
+      "item": "byg:tamrelite_gem"
+    },
+    "2": {
+      "item": "byg:tamrelite_gem"
+    },
+    "3": {
+      "item": "byg:tamrelite_gem"
+    },
+    "5": {
+      "item": "byg:tamrelite_gem"
+    }
+  },
+  "result": {
+    "item": "byg:tamrelite_armour_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "baobab" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:baobab_wood"
+    },
+    "1": {
+      "item": "byg:baobab_wood"
+    },
+    "2": {
+      "item": "byg:baobab_wood"
+    },
+    "3": {
+      "item": "byg:baobab_wood"
+    },
+    "4": {
+      "item": "byg:baobab_wood"
+    },
+    "5": {
+      "item": "byg:baobab_wood"
+    }
+  },
+  "result": {
+    "item": "byg:baobab_wall",
+    "count": 6
+  }
+}

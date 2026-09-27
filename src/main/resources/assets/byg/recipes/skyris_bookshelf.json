@@ -1,0 +1,38 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "skyris" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:skyris_planks"
+    },
+    {
+      "item": "byg:skyris_planks"
+    },
+    {
+      "item": "byg:skyris_planks"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "byg:skyris_planks"
+    },
+    {
+      "item": "byg:skyris_planks"
+    },
+    {
+      "item": "byg:skyris_planks"
+    }
+  ],
+  "result": {
+    "item": "byg:skyris_bookshelf",
+    "count": 1
+  }
+}

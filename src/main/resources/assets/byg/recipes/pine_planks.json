@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "pine" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:pine_log"
+    }
+  ],
+  "result": {
+    "item": "byg:pine_planks",
+    "count": 4
+  }
+}

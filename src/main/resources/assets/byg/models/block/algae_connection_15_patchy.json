@@ -1,0 +1,8 @@
+{
+  "parent": "byg:algae_tinted",
+  "textures": {
+    "all": "byg:blocks/algae_connection_15_patchy",
+    "particle": "byg:blocks/algae_connection_15_patchy",
+    "plant_leaf_pile1": "byg:blocks/algae_connection_15_patchy"
+  }
+}

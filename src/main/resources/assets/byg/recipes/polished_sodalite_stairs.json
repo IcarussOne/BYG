@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sodalite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:polished_sodalite"
+    },
+    "3": {
+      "item": "byg:polished_sodalite"
+    },
+    "4": {
+      "item": "byg:polished_sodalite"
+    },
+    "6": {
+      "item": "byg:polished_sodalite"
+    },
+    "7": {
+      "item": "byg:polished_sodalite"
+    },
+    "8": {
+      "item": "byg:polished_sodalite"
+    }
+  },
+  "result": {
+    "item": "byg:polished_sodalite_stairs",
+    "count": 4
+  }
+}

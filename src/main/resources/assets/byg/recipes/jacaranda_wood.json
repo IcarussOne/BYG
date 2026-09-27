@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "jacaranda" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:jacaranda_log"
+    },
+    {
+      "item": "byg:jacaranda_log"
+    },
+    {
+      "item": "byg:jacaranda_log"
+    },
+    {
+      "item": "byg:jacaranda_log"
+    }
+  ],
+  "result": {
+    "item": "byg:jacaranda_wood",
+    "count": 3
+  }
+}

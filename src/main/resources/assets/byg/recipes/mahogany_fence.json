@@ -1,0 +1,35 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "mahogany" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:mahogany_planks"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "2": {
+      "item": "byg:mahogany_planks"
+    },
+    "3": {
+      "item": "byg:mahogany_planks"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "5": {
+      "item": "byg:mahogany_planks"
+    }
+  },
+  "result": {
+    "item": "byg:mahogany_fence",
+    "count": 3
+  }
+}

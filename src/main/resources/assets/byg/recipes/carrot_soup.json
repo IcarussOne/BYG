@@ -1,0 +1,20 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "food" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:cooked_carrot"
+    },
+    {
+      "item": "byg:cooked_carrot"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "byg:carrot_soup",
+    "count": 1
+  }
+}

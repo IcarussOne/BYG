@@ -1,0 +1,20 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "glowshroom" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:green_glowshroom"
+    },
+    {
+      "item": "byg:green_glowshroom"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "byg:green_glowshroom_stew",
+    "count": 1
+  }
+}

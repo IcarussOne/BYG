@@ -1,0 +1,35 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rainbow_eucalyptus" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "2": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    },
+    "3": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "5": {
+      "item": "byg:rainbow_eucalyptus_planks"
+    }
+  },
+  "result": {
+    "item": "byg:rainbow_eucalyptus_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "jacaranda" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:jacaranda_planks"
+    },
+    "1": {
+      "item": "byg:jacaranda_planks"
+    },
+    "2": {
+      "item": "byg:jacaranda_planks"
+    }
+  },
+  "result": {
+    "item": "byg:jacaranda_slab",
+    "count": 6
+  }
+}

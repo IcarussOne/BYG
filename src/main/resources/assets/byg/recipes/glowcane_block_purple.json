@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "glowcane" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:glowcane_dust_purple"
+    },
+    {
+      "item": "byg:glowcane_dust_purple"
+    },
+    {
+      "item": "byg:glowcane_dust_purple"
+    },
+    {
+      "item": "byg:glowcane_dust_purple"
+    }
+  ],
+  "result": {
+    "item": "byg:glowcane_block_purple",
+    "count": 1
+  }
+}

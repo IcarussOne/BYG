@@ -1,0 +1,40 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "kasai"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "byg:kasai_ingot"
+    },
+    "1": {
+      "item": "byg:kasai_ingot"
+    },
+    "2": {
+      "item": "byg:kasai_ingot"
+    },
+    "4": {
+      "item": "byg:stone_stick"
+    },
+    "7": {
+      "item": "byg:stone_stick"
+    }
+  },
+  "result": {
+    "item": "byg:kasai_pickaxe",
+    "count": 1
+  }
+}

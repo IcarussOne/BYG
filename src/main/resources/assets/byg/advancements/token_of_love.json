@@ -1,0 +1,15 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "food" }, { "type": "byg:pet_regen_enabled" }],
+  "display": {
+    "icon": { "item": "byg:golden_beetroot" },
+    "title": { "translate": "advancements.byg.token_of_love.title" },
+    "description": { "translate": "advancements.byg.token_of_love.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "feed_tamed_animal": { "trigger": "minecraft:impossible" }
+  }
+}

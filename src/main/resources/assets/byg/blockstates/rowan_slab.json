@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:rowan_slab" },
+    "double=false,half=top": { "model": "byg:rowanslab_top" },
+    "double=true,half=bottom": { "model": "byg:rowan_planks" },
+    "double=true,half=top": { "model": "byg:rowan_planks" },
+    "inventory": { "model": "byg:rowan_slab" }
+  }
+}

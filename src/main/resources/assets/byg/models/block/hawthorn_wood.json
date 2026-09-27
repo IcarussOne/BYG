@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/hawthorn_log",
+    "up": "byg:blocks/hawthorn_log",
+    "north": "byg:blocks/hawthorn_log",
+    "east": "byg:blocks/hawthorn_log",
+    "south": "byg:blocks/hawthorn_log",
+    "west": "byg:blocks/hawthorn_log",
+    "particle": "byg:blocks/hawthorn_log"
+  }
+}

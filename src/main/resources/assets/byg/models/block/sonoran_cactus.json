@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/sonora_cactus_top",
+    "up": "byg:blocks/sonora_cactus_top",
+    "north": "byg:blocks/sonora_cactus_side",
+    "east": "byg:blocks/sonora_cactus_side",
+    "south": "byg:blocks/sonora_cactus_side",
+    "west": "byg:blocks/sonora_cactus_side",
+    "particle": "byg:blocks/sonora_cactus_top"
+  }
+}

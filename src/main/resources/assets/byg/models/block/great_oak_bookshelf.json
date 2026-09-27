@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/great_oak_planks",
+    "up": "byg:blocks/great_oak_planks",
+    "north": "byg:blocks/great_oak_bookshelf",
+    "east": "byg:blocks/great_oak_bookshelf",
+    "south": "byg:blocks/great_oak_bookshelf",
+    "west": "byg:blocks/great_oak_bookshelf",
+    "particle": "byg:blocks/great_oak_planks"
+  }
+}

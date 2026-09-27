@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:plant_stem"
+    },
+    "facing=south": {
+      "model": "byg:plant_stem"
+    },
+    "facing=north": {
+      "model": "byg:plant_stem"
+    },
+    "facing=east": {
+      "model": "byg:plant_stem",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:plant_stem",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:plant_stem",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:plant_stem",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

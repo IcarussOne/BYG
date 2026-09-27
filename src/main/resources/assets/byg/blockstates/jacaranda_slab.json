@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:jacaranda_slab" },
+    "double=false,half=top": { "model": "byg:jacarandaslab_top" },
+    "double=true,half=bottom": { "model": "byg:jacaranda_planks" },
+    "double=true,half=top": { "model": "byg:jacaranda_planks" },
+    "inventory": { "model": "byg:jacaranda_slab" }
+  }
+}

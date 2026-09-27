@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:mahogany_log"
+    },
+    "facing=south": {
+      "model": "byg:mahogany_log"
+    },
+    "facing=north": {
+      "model": "byg:mahogany_log"
+    },
+    "facing=east": {
+      "model": "byg:mahogany_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:mahogany_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:mahogany_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:mahogany_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

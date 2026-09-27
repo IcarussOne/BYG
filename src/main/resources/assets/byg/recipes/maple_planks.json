@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "maple" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:maple_log"
+    }
+  ],
+  "result": {
+    "item": "byg:maple_planks",
+    "count": 4
+  }
+}

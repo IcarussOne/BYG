@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/palm_log",
+    "up": "byg:blocks/palm_log",
+    "north": "byg:blocks/palm_log",
+    "east": "byg:blocks/palm_log",
+    "south": "byg:blocks/palm_log",
+    "west": "byg:blocks/palm_log",
+    "particle": "byg:blocks/palm_log"
+  }
+}

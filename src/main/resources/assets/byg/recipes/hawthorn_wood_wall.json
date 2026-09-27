@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "hawthorn"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:hawthorn_wood"
+    },
+    "1": {
+      "item": "byg:hawthorn_wood"
+    },
+    "2": {
+      "item": "byg:hawthorn_wood"
+    },
+    "3": {
+      "item": "byg:hawthorn_wood"
+    },
+    "4": {
+      "item": "byg:hawthorn_wood"
+    },
+    "5": {
+      "item": "byg:hawthorn_wood"
+    }
+  },
+  "result": {
+    "item": "byg:hawthorn_wood_wall",
+    "count": 6
+  }
+}

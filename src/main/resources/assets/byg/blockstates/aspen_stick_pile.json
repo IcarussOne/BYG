@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:aspen_stick_pile"
+    },
+    "facing=north": {
+      "model": "byg:aspen_stick_pile"
+    },
+    "facing=east": {
+      "model": "byg:aspen_stick_pile",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:aspen_stick_pile",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:aspen_stick_pile",
+      "y": 270
+    }
+  }
+}

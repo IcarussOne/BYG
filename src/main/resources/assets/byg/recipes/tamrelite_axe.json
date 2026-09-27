@@ -1,0 +1,42 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "tamrelite"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "tamrelite"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "byg:tamrelite_gem"
+    },
+    "1": {
+      "item": "byg:tamrelite_gem"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "3": {
+      "item": "byg:tamrelite_gem"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "byg:tamrelite_axe",
+    "count": 1
+  }
+}

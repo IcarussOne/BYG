@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "byg:equipment_set_enabled",
+      "set": "kasai"
+    },
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "kasai"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:kasai_chain_plating"
+    },
+    {
+      "item": "byg:kasai_chain_plating"
+    },
+    {
+      "item": "byg:kasai_chain_plating"
+    },
+    {
+      "item": "byg:kasai_chain_plating"
+    }
+  ],
+  "result": {
+    "item": "byg:kasai_armour_boots",
+    "count": 1
+  }
+}

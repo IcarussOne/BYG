@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "byg:blocks/ironwood_log",
+    "particle": "byg:blocks/ironwood_log"
+  }
+}

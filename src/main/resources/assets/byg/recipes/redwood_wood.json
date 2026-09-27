@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "redwood" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:redwood_log"
+    },
+    {
+      "item": "byg:redwood_log"
+    },
+    {
+      "item": "byg:redwood_log"
+    },
+    {
+      "item": "byg:redwood_log"
+    }
+  ],
+  "result": {
+    "item": "byg:redwood_wood",
+    "count": 3
+  }
+}

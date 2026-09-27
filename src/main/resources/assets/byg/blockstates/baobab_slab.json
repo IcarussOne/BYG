@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:baobab_slab" },
+    "double=false,half=top": { "model": "byg:baobabslab_top" },
+    "double=true,half=bottom": { "model": "byg:baobab_planks" },
+    "double=true,half=top": { "model": "byg:baobab_planks" },
+    "inventory": { "model": "byg:baobab_slab" }
+  }
+}

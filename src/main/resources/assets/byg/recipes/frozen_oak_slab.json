@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "frozen_oak"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:frozen_oak_planks"
+    },
+    "1": {
+      "item": "byg:frozen_oak_planks"
+    },
+    "2": {
+      "item": "byg:frozen_oak_planks"
+    }
+  },
+  "result": {
+    "item": "byg:frozen_oak_slab",
+    "count": 6
+  }
+}

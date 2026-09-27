@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "pine" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:pine_wood"
+    },
+    "1": {
+      "item": "byg:pine_wood"
+    },
+    "2": {
+      "item": "byg:pine_wood"
+    },
+    "3": {
+      "item": "byg:pine_wood"
+    },
+    "4": {
+      "item": "byg:pine_wood"
+    },
+    "5": {
+      "item": "byg:pine_wood"
+    }
+  },
+  "result": {
+    "item": "byg:pine_wood_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:medium_green_glowshroom"
+    },
+    "facing=north": {
+      "model": "byg:medium_green_glowshroom"
+    },
+    "facing=east": {
+      "model": "byg:medium_green_glowshroom",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:medium_green_glowshroom",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:medium_green_glowshroom",
+      "y": 270
+    }
+  }
+}

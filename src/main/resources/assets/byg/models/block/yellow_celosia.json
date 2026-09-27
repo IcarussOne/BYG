@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "byg:blocks/yellow_celosia",
+    "particle": "byg:blocks/yellow_celosia"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "conditions": [{ "type": "byg:ore_content_enabled", "ore": "pendorite" }],
+  "display": {
+    "icon": { "item": "byg:pendorite_gem" },
+    "title": { "translate": "advancements.byg.pendorite_gem.title" },
+    "description": { "translate": "advancements.byg.pendorite_gem.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "obtain_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "item": "byg:pendorite_gem" }] }
+    }
+  }
+}

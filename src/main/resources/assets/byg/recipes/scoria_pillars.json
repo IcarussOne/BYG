@@ -1,0 +1,31 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "scoria" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "byg:scoria"
+    },
+    "3": {
+      "item": "minecraft:clay_ball"
+    },
+    "4": {
+      "item": "byg:scoria"
+    },
+    "5": {
+      "item": "minecraft:clay_ball"
+    },
+    "7": {
+      "item": "byg:scoria"
+    }
+  },
+  "result": {
+    "item": "byg:scoria_pillars",
+    "count": 3
+  }
+}

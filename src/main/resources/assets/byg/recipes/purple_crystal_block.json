@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "crystal" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:purple_crystals"
+    },
+    {
+      "item": "byg:purple_crystals"
+    },
+    {
+      "item": "byg:purple_crystals"
+    },
+    {
+      "item": "byg:purple_crystals"
+    }
+  ],
+  "result": {
+    "item": "byg:purple_crystal_block",
+    "count": 1
+  }
+}

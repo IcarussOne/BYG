@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "colored_sand" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:light_blue_sand"
+    },
+    {
+      "item": "byg:light_blue_sand"
+    },
+    {
+      "item": "byg:light_blue_sand"
+    },
+    {
+      "item": "byg:light_blue_sand"
+    }
+  ],
+  "result": {
+    "item": "byg:light_blue_sandstone",
+    "count": 1
+  }
+}

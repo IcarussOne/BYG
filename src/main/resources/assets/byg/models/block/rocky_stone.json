@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/rocky_stone",
+    "up": "byg:blocks/rocky_stone",
+    "north": "byg:blocks/rocky_stone",
+    "east": "byg:blocks/rocky_stone",
+    "south": "byg:blocks/rocky_stone",
+    "west": "byg:blocks/rocky_stone",
+    "particle": "byg:blocks/rocky_stone"
+  }
+}

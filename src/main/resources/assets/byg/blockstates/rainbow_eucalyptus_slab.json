@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:rainbow_eucalyptus_slab" },
+    "double=false,half=top": { "model": "byg:rainboweucalyptusslab_top" },
+    "double=true,half=bottom": { "model": "byg:rainbow_eucalyptus_planks" },
+    "double=true,half=top": { "model": "byg:rainbow_eucalyptus_planks" },
+    "inventory": { "model": "byg:rainbow_eucalyptus_slab" }
+  }
+}

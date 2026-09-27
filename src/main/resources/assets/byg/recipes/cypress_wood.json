@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "cypress" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:cypress_log"
+    },
+    {
+      "item": "byg:cypress_log"
+    },
+    {
+      "item": "byg:cypress_log"
+    },
+    {
+      "item": "byg:cypress_log"
+    }
+  ],
+  "result": {
+    "item": "byg:cypress_wood",
+    "count": 3
+  }
+}

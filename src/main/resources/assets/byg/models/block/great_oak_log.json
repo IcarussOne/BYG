@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/great_oak_log_top",
+    "up": "byg:blocks/great_oak_log_top",
+    "north": "byg:blocks/great_oak_log_side",
+    "east": "byg:blocks/great_oak_log_side",
+    "south": "byg:blocks/great_oak_log_side",
+    "west": "byg:blocks/great_oak_log_side",
+    "particle": "byg:blocks/great_oak_log_top"
+  }
+}

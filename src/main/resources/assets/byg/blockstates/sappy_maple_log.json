@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "sap_side=north": {
+      "model": "byg:sappy_maple_log"
+    },
+    "sap_side=east": {
+      "model": "byg:sappy_maple_log",
+      "y": 90
+    },
+    "sap_side=south": {
+      "model": "byg:sappy_maple_log",
+      "y": 180
+    },
+    "sap_side=west": {
+      "model": "byg:sappy_maple_log",
+      "y": 270
+    }
+  }
+}

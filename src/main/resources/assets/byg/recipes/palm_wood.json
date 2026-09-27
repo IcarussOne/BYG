@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "byg:biome_content_enabled",
+      "set": "palm"
+    }
+  ],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:palm_log"
+    },
+    {
+      "item": "byg:palm_log"
+    },
+    {
+      "item": "byg:palm_log"
+    },
+    {
+      "item": "byg:palm_log"
+    }
+  ],
+  "result": {
+    "item": "byg:palm_wood",
+    "count": 3
+  }
+}

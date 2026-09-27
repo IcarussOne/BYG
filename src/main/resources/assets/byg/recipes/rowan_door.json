@@ -1,0 +1,34 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "rowan" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:rowan_planks"
+    },
+    "1": {
+      "item": "byg:rowan_planks"
+    },
+    "2": {
+      "item": "byg:rowan_planks"
+    },
+    "3": {
+      "item": "byg:rowan_planks"
+    },
+    "4": {
+      "item": "byg:rowan_planks"
+    },
+    "5": {
+      "item": "byg:rowan_planks"
+    }
+  },
+  "result": {
+    "item": "byg:rowan_door",
+    "count": 3
+  }
+}

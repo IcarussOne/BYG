@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "byg:blocks/strawberry_stage2",
+    "particle": "byg:blocks/strawberry_stage2"
+  }
+}

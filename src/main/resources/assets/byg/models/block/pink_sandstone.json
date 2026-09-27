@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/pimk_sandstone_bottom",
+    "up": "byg:blocks/pimk_sandstone_top",
+    "north": "byg:blocks/pimk_sandstone",
+    "east": "byg:blocks/pimk_sandstone",
+    "south": "byg:blocks/pimk_sandstone",
+    "west": "byg:blocks/pimk_sandstone",
+    "particle": "byg:blocks/pimk_sandstone_bottom"
+  }
+}

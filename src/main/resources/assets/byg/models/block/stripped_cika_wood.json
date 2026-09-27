@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/stripped_cika_log",
+    "up": "byg:blocks/stripped_cika_log",
+    "north": "byg:blocks/stripped_cika_log",
+    "east": "byg:blocks/stripped_cika_log",
+    "south": "byg:blocks/stripped_cika_log",
+    "west": "byg:blocks/stripped_cika_log",
+    "particle": "byg:blocks/stripped_cika_log"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "byg:blocks/hawthorn_log",
+    "particle": "byg:blocks/hawthorn_log"
+  }
+}

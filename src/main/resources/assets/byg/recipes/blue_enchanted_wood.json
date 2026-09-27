@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "enchanted_tree" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:enchanted_log"
+    },
+    {
+      "item": "byg:enchanted_log"
+    },
+    {
+      "item": "byg:enchanted_log"
+    },
+    {
+      "item": "byg:enchanted_log"
+    }
+  ],
+  "result": {
+    "item": "byg:blue_enchanted_wood",
+    "count": 3
+  }
+}

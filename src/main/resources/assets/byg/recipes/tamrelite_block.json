@@ -1,0 +1,48 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:tamrelite_gem"
+    },
+    "1": {
+      "item": "byg:tamrelite_gem"
+    },
+    "2": {
+      "item": "byg:tamrelite_gem"
+    },
+    "3": {
+      "item": "byg:tamrelite_gem"
+    },
+    "4": {
+      "item": "byg:tamrelite_gem"
+    },
+    "5": {
+      "item": "byg:tamrelite_gem"
+    },
+    "6": {
+      "item": "byg:tamrelite_gem"
+    },
+    "7": {
+      "item": "byg:tamrelite_gem"
+    },
+    "8": {
+      "item": "byg:tamrelite_gem"
+    }
+  },
+  "result": {
+    "item": "byg:tamrelite_block",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "tamrelite"
+    }
+  ]
+}

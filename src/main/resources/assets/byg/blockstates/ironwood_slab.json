@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:ironwood_slab" },
+    "double=false,half=top": { "model": "byg:ironwoodslab_top" },
+    "double=true,half=bottom": { "model": "byg:ironwood_planks" },
+    "double=true,half=top": { "model": "byg:ironwood_planks" },
+    "inventory": { "model": "byg:ironwood_slab" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "hawthorn" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:hawthorn_log"
+    },
+    {
+      "item": "byg:hawthorn_log"
+    },
+    {
+      "item": "byg:hawthorn_log"
+    },
+    {
+      "item": "byg:hawthorn_log"
+    }
+  ],
+  "result": {
+    "item": "byg:hawthorn_wood",
+    "count": 3
+  }
+}

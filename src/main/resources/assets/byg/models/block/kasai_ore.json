@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/kasai_ore",
+    "particle": "byg:blocks/kasai_ore"
+  }
+}

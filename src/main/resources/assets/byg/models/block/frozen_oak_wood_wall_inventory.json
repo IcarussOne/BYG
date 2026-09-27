@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "byg:blocks/oak_frozen_log_side",
+    "particle": "byg:blocks/oak_frozen_log_side"
+  }
+}

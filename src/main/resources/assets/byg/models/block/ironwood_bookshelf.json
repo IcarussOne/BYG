@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/ironwood_planks",
+    "up": "byg:blocks/ironwood_planks",
+    "north": "byg:blocks/ironwood_bookshelf",
+    "east": "byg:blocks/ironwood_bookshelf",
+    "south": "byg:blocks/ironwood_bookshelf",
+    "west": "byg:blocks/ironwood_bookshelf",
+    "particle": "byg:blocks/ironwood_planks"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "crystal" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:light_blue_crystals"
+    },
+    {
+      "item": "byg:light_blue_crystals"
+    },
+    {
+      "item": "byg:light_blue_crystals"
+    },
+    {
+      "item": "byg:light_blue_crystals"
+    }
+  ],
+  "result": {
+    "item": "byg:light_blue_crystal_block",
+    "count": 1
+  }
+}

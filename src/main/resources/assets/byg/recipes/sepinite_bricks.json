@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sepinite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:sepinite"
+    },
+    {
+      "item": "byg:sepinite"
+    },
+    {
+      "item": "byg:sepinite"
+    },
+    {
+      "item": "byg:sepinite"
+    }
+  ],
+  "result": {
+    "item": "byg:sepinite_bricks",
+    "count": 4
+  }
+}

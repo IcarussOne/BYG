@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "blueberry" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:blueberry"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "byg:blueberry"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "byg:blueberry_pie",
+    "count": 1
+  }
+}

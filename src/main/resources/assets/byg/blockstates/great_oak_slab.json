@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:great_oak_slab" },
+    "double=false,half=top": { "model": "byg:greatoakslab_top" },
+    "double=true,half=bottom": { "model": "byg:great_oak_planks" },
+    "double=true,half=top": { "model": "byg:great_oak_planks" },
+    "inventory": { "model": "byg:great_oak_slab" }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "variants": {
+    "east=false,north=false,south=false,west=false": [
+      { "model": "byg:algae_connection_0", "weight": 3 },
+      { "model": "byg:algae_connection_0_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_0_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_0_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=false,south=false,west=false": [
+      { "model": "byg:algae_connection_1", "weight": 3 },
+      { "model": "byg:algae_connection_1_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_1_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_1_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=true,south=false,west=false": [
+      { "model": "byg:algae_connection_2", "weight": 3 },
+      { "model": "byg:algae_connection_2_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_2_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_2_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=true,south=false,west=false": [
+      { "model": "byg:algae_connection_3", "weight": 3 },
+      { "model": "byg:algae_connection_3_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_3_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_3_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=false,south=true,west=false": [
+      { "model": "byg:algae_connection_4", "weight": 3 },
+      { "model": "byg:algae_connection_4_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_4_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_4_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=false,south=true,west=false": [
+      { "model": "byg:algae_connection_5", "weight": 3 },
+      { "model": "byg:algae_connection_5_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_5_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_5_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=true,south=true,west=false": [
+      { "model": "byg:algae_connection_6", "weight": 3 },
+      { "model": "byg:algae_connection_6_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_6_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_6_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=true,south=true,west=false": [
+      { "model": "byg:algae_connection_7", "weight": 3 },
+      { "model": "byg:algae_connection_7_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_7_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_7_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=false,south=false,west=true": [
+      { "model": "byg:algae_connection_8", "weight": 3 },
+      { "model": "byg:algae_connection_8_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_8_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_8_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=false,south=false,west=true": [
+      { "model": "byg:algae_connection_9", "weight": 3 },
+      { "model": "byg:algae_connection_9_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_9_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_9_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=true,south=false,west=true": [
+      { "model": "byg:algae_connection_10", "weight": 3 },
+      { "model": "byg:algae_connection_10_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_10_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_10_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=true,south=false,west=true": [
+      { "model": "byg:algae_connection_11", "weight": 3 },
+      { "model": "byg:algae_connection_11_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_11_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_11_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=false,south=true,west=true": [
+      { "model": "byg:algae_connection_12", "weight": 3 },
+      { "model": "byg:algae_connection_12_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_12_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_12_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=false,south=true,west=true": [
+      { "model": "byg:algae_connection_13", "weight": 3 },
+      { "model": "byg:algae_connection_13_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_13_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_13_patchy_3", "weight": 1 }
+    ],
+    "east=false,north=true,south=true,west=true": [
+      { "model": "byg:algae_connection_14", "weight": 3 },
+      { "model": "byg:algae_connection_14_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_14_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_14_patchy_3", "weight": 1 }
+    ],
+    "east=true,north=true,south=true,west=true": [
+      { "model": "byg:algae_connection_15", "weight": 6 },
+      { "model": "byg:algae_connection_15_patchy", "weight": 1 },
+      { "model": "byg:algae_connection_15_patchy_1", "weight": 1 },
+      { "model": "byg:algae_connection_15_patchy_2", "weight": 1 },
+      { "model": "byg:algae_connection_15_patchy_3", "weight": 1 },
+      { "model": "byg:algae_connection_15_patchy_4", "weight": 1 },
+      { "model": "byg:algae_connection_15_patchy_5", "weight": 1 }
+    ]
+  }
+}

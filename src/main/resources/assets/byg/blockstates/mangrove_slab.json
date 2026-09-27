@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:mangrove_slab" },
+    "double=false,half=top": { "model": "byg:mangroveslab_top" },
+    "double=true,half=bottom": { "model": "byg:mangrove_planks" },
+    "double=true,half=top": { "model": "byg:mangrove_planks" },
+    "inventory": { "model": "byg:mangrove_slab" }
+  }
+}

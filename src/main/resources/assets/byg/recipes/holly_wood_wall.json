@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "holly" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:holly_wood"
+    },
+    "1": {
+      "item": "byg:holly_wood"
+    },
+    "2": {
+      "item": "byg:holly_wood"
+    },
+    "3": {
+      "item": "byg:holly_wood"
+    },
+    "4": {
+      "item": "byg:holly_wood"
+    },
+    "5": {
+      "item": "byg:holly_wood"
+    }
+  },
+  "result": {
+    "item": "byg:holly_wood_wall",
+    "count": 6
+  }
+}

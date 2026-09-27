@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/hawthorn_leaves_berry",
+    "particle": "byg:blocks/hawthorn_leaves_berry"
+  }
+}

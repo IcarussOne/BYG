@@ -1,0 +1,17 @@
+.figure {
+  margin: 1rem 0;
+}
+
+.figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.placeholder {
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  border: 2px dashed var(--ifm-color-emphasis-400);
+  border-radius: 6px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+}

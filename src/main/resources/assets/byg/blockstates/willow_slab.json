@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "double=false,half=bottom": { "model": "byg:willow_slab" },
+    "double=false,half=top": { "model": "byg:willowslab_top" },
+    "double=true,half=bottom": { "model": "byg:willow_planks" },
+    "double=true,half=top": { "model": "byg:willow_planks" },
+    "inventory": { "model": "byg:willow_slab" }
+  }
+}

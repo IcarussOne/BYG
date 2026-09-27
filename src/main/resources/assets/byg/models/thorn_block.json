@@ -1,0 +1,1168 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.6,
+        0.6
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [
+        3,
+        0,
+        3
+      ],
+      "to": [
+        13,
+        16,
+        13
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_side",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_side",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_side",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_side",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_top",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_top",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn",
+      "from": [
+        0,
+        5,
+        8
+      ],
+      "to": [
+        3,
+        8,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn1",
+      "from": [
+        0,
+        11,
+        8
+      ],
+      "to": [
+        3,
+        14,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn2",
+      "from": [
+        0,
+        6,
+        7
+      ],
+      "to": [
+        3,
+        9,
+        7
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn3",
+      "from": [
+        0,
+        11,
+        7
+      ],
+      "to": [
+        3,
+        14,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn4",
+      "from": [
+        13,
+        5,
+        8
+      ],
+      "to": [
+        16,
+        8,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn5",
+      "from": [
+        13,
+        11,
+        6
+      ],
+      "to": [
+        16,
+        14,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn6",
+      "from": [
+        13,
+        11,
+        7
+      ],
+      "to": [
+        16,
+        14,
+        7
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn7",
+      "from": [
+        11,
+        6,
+        13
+      ],
+      "to": [
+        14,
+        9,
+        13
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn8",
+      "from": [
+        6,
+        4,
+        0
+      ],
+      "to": [
+        6,
+        7,
+        3
+      ],
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn9",
+      "from": [
+        6,
+        5,
+        1
+      ],
+      "to": [
+        6,
+        8,
+        4
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn10",
+      "from": [
+        11,
+        11,
+        1
+      ],
+      "to": [
+        11,
+        14,
+        4
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn11",
+      "from": [
+        10,
+        11,
+        13
+      ],
+      "to": [
+        10,
+        14,
+        16
+      ],
+      "faces": {
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ],
+          "rotation": 180
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn12",
+      "from": [
+        9,
+        12,
+        13
+      ],
+      "to": [
+        9,
+        15,
+        16
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ],
+          "rotation": 180
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thorn13",
+      "from": [
+        6,
+        4,
+        12.5
+      ],
+      "to": [
+        6,
+        7,
+        15.5
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            7,
+            5,
+            9,
+            10
+          ],
+          "rotation": 180
+        },
+        "south": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            6,
+            5,
+            9,
+            9
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#thorn_block_pricks",
+          "uv": [
+            0,
+            0,
+            0,
+            3
+          ]
+        }
+      }
+    }
+  ]
+}

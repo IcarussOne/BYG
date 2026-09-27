@@ -1,0 +1,33 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "cika" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "byg:cika_wood"
+    },
+    "1": {
+      "item": "byg:cika_wood"
+    },
+    "2": {
+      "item": "byg:cika_wood"
+    },
+    "3": {
+      "item": "byg:cika_wood"
+    },
+    "4": {
+      "item": "byg:cika_wood"
+    },
+    "5": {
+      "item": "byg:cika_wood"
+    }
+  },
+  "result": {
+    "item": "byg:cika_wood_wall",
+    "count": 6
+  }
+}

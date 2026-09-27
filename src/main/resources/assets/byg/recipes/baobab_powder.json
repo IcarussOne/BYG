@@ -1,0 +1,14 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "baobab" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:baobab_fruit"
+    }
+  ],
+  "result": {
+    "item": "byg:baobab_powder",
+    "count": 1
+  }
+}

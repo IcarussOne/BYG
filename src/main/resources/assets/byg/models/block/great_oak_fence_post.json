@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "byg:blocks/great_oak_planks",
+    "particle": "byg:blocks/great_oak_planks"
+  }
+}

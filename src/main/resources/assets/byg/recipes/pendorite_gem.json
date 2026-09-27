@@ -1,0 +1,19 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:pendorite_block"
+    }
+  ],
+  "result": {
+    "item": "byg:pendorite_gem",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "type": "byg:ore_content_enabled",
+      "ore": "pendorite"
+    }
+  ]
+}

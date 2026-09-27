@@ -1,0 +1,8 @@
+{
+  "parent": "byg:gate_open",
+  "textures": {
+    "all": "byg:blocks/zelkova_planks",
+    "particle": "byg:blocks/zelkova_planks",
+    "aspen_planks": "byg:blocks/zelkova_planks"
+  }
+}

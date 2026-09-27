@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "byg:blocks/sodalite_polished",
+    "top": "byg:blocks/sodalite_polished",
+    "side": "byg:blocks/sodalite_polished"
+  }
+}

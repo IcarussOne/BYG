@@ -1,0 +1,18 @@
+{
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:wooden_mortar"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "flowerYellow"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 11,
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/sand_dirt",
+    "up": "byg:blocks/sand_grass_top",
+    "north": "byg:blocks/sand_grass_side",
+    "east": "byg:blocks/sand_grass_side",
+    "south": "byg:blocks/sand_grass_side",
+    "west": "byg:blocks/sand_grass_side",
+    "particle": "byg:blocks/sand_dirt"
+  }
+}

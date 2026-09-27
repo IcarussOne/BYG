@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/hardened_dirt",
+    "particle": "byg:blocks/hardened_dirt"
+  }
+}

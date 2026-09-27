@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "byg:blocks/light_blue_petal",
+    "particle": "byg:blocks/light_blue_petal"
+  }
+}

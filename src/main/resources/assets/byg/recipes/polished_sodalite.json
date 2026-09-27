@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "sodalite" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:sodalite"
+    },
+    {
+      "item": "byg:sodalite"
+    },
+    {
+      "item": "byg:sodalite"
+    },
+    {
+      "item": "byg:sodalite"
+    }
+  ],
+  "result": {
+    "item": "byg:polished_sodalite",
+    "count": 4
+  }
+}

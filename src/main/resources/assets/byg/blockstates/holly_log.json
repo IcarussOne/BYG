@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:holly_log"
+    },
+    "facing=south": {
+      "model": "byg:holly_log"
+    },
+    "facing=north": {
+      "model": "byg:holly_log"
+    },
+    "facing=east": {
+      "model": "byg:holly_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:holly_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:holly_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:holly_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

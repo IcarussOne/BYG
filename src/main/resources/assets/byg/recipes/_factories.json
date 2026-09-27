@@ -1,0 +1,7 @@
+{
+  "conditions": {
+    "equipment_set_enabled": "windanesz.byg.recipe.EquipmentSetEnabledCondition",
+    "biome_content_enabled": "windanesz.byg.recipe.BiomeContentEnabledCondition",
+    "ore_content_enabled": "windanesz.byg.recipe.OreContentEnabledCondition"
+  }
+}

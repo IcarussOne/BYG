@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "double=false,half=bottom": {
+      "model": "byg:fir_slab"
+    },
+    "double=false,half=top": {
+      "model": "byg:firslab_top"
+    },
+    "double=true,half=bottom": {
+      "model": "byg:fir_planks"
+    },
+    "double=true,half=top": {
+      "model": "byg:fir_planks"
+    },
+    "inventory": {
+      "model": "byg:fir_slab"
+    }
+  }
+}

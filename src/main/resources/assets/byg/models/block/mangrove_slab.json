@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "byg:blocks/mangrove_planks",
+    "top": "byg:blocks/mangrove_planks",
+    "side": "byg:blocks/mangrove_planks",
+    "particle": "byg:blocks/mangrove_planks"
+  }
+}

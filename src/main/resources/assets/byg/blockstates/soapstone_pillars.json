@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "byg:soapstone_pillars"
+    },
+    "facing=south": {
+      "model": "byg:soapstone_pillars"
+    },
+    "facing=north": {
+      "model": "byg:soapstone_pillars"
+    },
+    "facing=east": {
+      "model": "byg:soapstone_pillars",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:soapstone_pillars",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:soapstone_pillars",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:soapstone_pillars",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

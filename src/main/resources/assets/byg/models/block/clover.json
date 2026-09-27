@@ -1,0 +1,8 @@
+{
+  "parent": "byg:leafmodel",
+  "textures": {
+    "all": "byg:blocks/plant_clover",
+    "particle": "byg:blocks/plant_clover",
+    "plant_leaf_pile1": "byg:blocks/plant_clover"
+  }
+}

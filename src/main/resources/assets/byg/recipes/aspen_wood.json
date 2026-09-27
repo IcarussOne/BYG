@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "aspen" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:aspen_log"
+    },
+    {
+      "item": "byg:aspen_log"
+    },
+    {
+      "item": "byg:aspen_log"
+    },
+    {
+      "item": "byg:aspen_log"
+    }
+  ],
+  "result": {
+    "item": "byg:aspen_wood",
+    "count": 3
+  }
+}

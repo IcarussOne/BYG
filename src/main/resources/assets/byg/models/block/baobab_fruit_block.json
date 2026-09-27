@@ -1,0 +1,10 @@
+{
+  "parent": "byg:baobab_fruit",
+  "textures": {
+    "all": "byg:blocks/baobab_fruit_side",
+    "particle": "byg:blocks/baobab_fruit_side",
+    "0": "byg:blocks/baobab_fruit_stem",
+    "1": "byg:blocks/baobab_fruit_side",
+    "2": "byg:blocks/baobab_fruit_top"
+  }
+}

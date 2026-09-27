@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "zelkova" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:zelkova_log"
+    },
+    {
+      "item": "byg:zelkova_log"
+    },
+    {
+      "item": "byg:zelkova_log"
+    },
+    {
+      "item": "byg:zelkova_log"
+    }
+  ],
+  "result": {
+    "item": "byg:zelkova_wood",
+    "count": 3
+  }
+}

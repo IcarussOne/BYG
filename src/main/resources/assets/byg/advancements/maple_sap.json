@@ -1,0 +1,15 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "maple" }],
+  "display": {
+    "icon": { "item": "byg:maple_sap" },
+    "title": { "translate": "advancements.byg.maple_sap.title" },
+    "description": { "translate": "advancements.byg.maple_sap.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "collect_sap": { "trigger": "minecraft:impossible" }
+  }
+}

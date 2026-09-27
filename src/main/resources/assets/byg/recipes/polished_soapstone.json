@@ -1,0 +1,23 @@
+{
+  "conditions": [{ "type": "byg:biome_content_enabled", "set": "soapstone" }],
+  "group": "byg",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:soapstone"
+    },
+    {
+      "item": "byg:soapstone"
+    },
+    {
+      "item": "byg:soapstone"
+    },
+    {
+      "item": "byg:soapstone"
+    }
+  ],
+  "result": {
+    "item": "byg:polished_soapstone",
+    "count": 4
+  }
+}

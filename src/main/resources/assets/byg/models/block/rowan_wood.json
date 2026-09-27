@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/rowan_log",
+    "up": "byg:blocks/rowan_log",
+    "north": "byg:blocks/rowan_log",
+    "east": "byg:blocks/rowan_log",
+    "south": "byg:blocks/rowan_log",
+    "west": "byg:blocks/rowan_log",
+    "particle": "byg:blocks/rowan_log"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "conditions": [{ "type": "byg:equipment_set_enabled", "set": "kasai" }],
+  "display": {
+    "icon": { "item": "byg:kasai_armour_body" },
+    "title": { "translate": "advancements.byg.kasai_full_set.title" },
+    "description": { "translate": "advancements.byg.kasai_full_set.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "byg:root",
+  "criteria": {
+    "full_set": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "byg:kasai_armour_helmet" },
+          { "item": "byg:kasai_armour_body" },
+          { "item": "byg:kasai_armour_legs" },
+          { "item": "byg:kasai_armour_boots" }
+        ]
+      }
+    }
+  }
+}
