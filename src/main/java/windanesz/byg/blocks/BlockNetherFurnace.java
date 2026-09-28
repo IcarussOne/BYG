@@ -85,6 +85,14 @@ public class BlockNetherFurnace extends Block {
         world.scheduleUpdate(pos, this, this.tickRate(world));
     }
 
+    @Override
+    public void neighborChanged(IBlockState state, World world, BlockPos pos, Block blockIn, BlockPos fromPos) {
+        super.neighborChanged(state, world, pos, blockIn, fromPos);
+        if (!world.isRemote && fromPos.equals(pos.down())) {
+            onTick(world, pos);
+        }
+    }
+
     public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
         super.updateTick(world, pos, state, random);
         onTick(world, pos);

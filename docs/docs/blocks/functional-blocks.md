@@ -10,8 +10,8 @@ description: The Nether Furnace, storage Crate, Maple Tap and Bookshelves - BYG'
 
 A furnace for smelting [Kasai Ore](../items-and-food/equipment.md#smelting-kasai-ore). Craft it with 8 red nether bricks around a furnace.
 
-- **Light it** by placing fire directly under it (`netherFurnaceIgnitesFromFireBelow`); it goes out if the fire below disappears.
-- While lit, put **Kasai Ore** in the fuel slot's input and **Blaze Powder** in the fuel slot to convert them into Kasai Ingots, one pair every 10 ticks (`netherFurnaceLitTickRate`).
+- **Light it** by placing fire directly under it (`netherFurnaceIgnitesFromFireBelow`). It responds when the fire is placed and goes out if the fire below disappears.
+- While lit, put **Kasai Ore** in the input slot and **Blaze Powder** in the fuel slot to convert them into Kasai Ingots, one pair every 10 ticks (`netherFurnaceLitTickRate`).
 
 ## Crate
 

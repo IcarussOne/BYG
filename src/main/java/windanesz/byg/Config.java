@@ -1808,7 +1808,7 @@ public final class Config {
         @net.minecraftforge.common.config.Config.Comment("Whether Springwater grants Regeneration I while an entity remains in it.")
         public boolean springwaterAppliesRegeneration = true;
         public boolean netherFurnaceIgnitesFromFireBelow = true;
-        public int netherFurnaceTickRate = 2600;
+        public int netherFurnaceTickRate = 20;
         public int netherFurnaceLitTickRate = 10;
         public double netherFurnaceAmbientEffectChance = 0.01D;
         public int netherFurnaceAmbientParticleCount = 5;

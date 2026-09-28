@@ -215,7 +215,7 @@ Each row stands for two options: the prefix followed by `FoodLevel` and by `Satu
 | `springwaterBubbleParticleCount` | `2` | - |  | - |
 | `springwaterAppliesRegeneration` | `true` | - |  | Whether Springwater grants Regeneration I while an entity remains in it. |
 | `netherFurnaceIgnitesFromFireBelow` | `true` | - |  | - |
-| `netherFurnaceTickRate` | `2600` | - |  | - |
+| `netherFurnaceTickRate` | `20` | 1 or more |  | Ticks between an unlit Nether Furnace's checks for fire directly beneath it. 20 ticks is about 1 second. |
 | `netherFurnaceLitTickRate` | `10` | - |  | - |
 | `netherFurnaceAmbientEffectChance` | `0.01` | - |  | - |
 | `netherFurnaceAmbientParticleCount` | `5` | - |  | - |
