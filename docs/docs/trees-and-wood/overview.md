@@ -6,7 +6,7 @@ description: What a BYG wood set is, and how to turn one off.
 
 # Trees and Wood: Overview
 
-Most BYG trees come as a **wood set**: a family of blocks made from one kind of log. The [Wood Sets](wood-sets.md) page lists every family and which blocks it has. [Saplings and Growth](saplings-and-growth.md) explains how to grow the trees.
+Most BYG trees come as a **wood set**: a family of blocks made from one kind of log. The [Wood Sets](wood-sets.md) page lists every family and which blocks it has.
 
 ## Turning a set off
 

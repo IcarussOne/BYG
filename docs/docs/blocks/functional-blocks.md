@@ -17,7 +17,7 @@ A furnace for smelting [Kasai Ore](../items-and-food/equipment.md#smelting-kasai
 
 ## Crate
 
-A wooden storage container, similar to a chest, found as part of the Dead Sea Shipwreck structure with its own loot table. See [World Generation](../world-generation/structures.md) for its contents.
+A wooden storage container, similar to a chest, found as part of the Dead Sea Shipwreck structure with its own loot table. See [Structures](../structures.md#dead-sea-shipwreck) for its contents.
 
 ## Maple Tap
 

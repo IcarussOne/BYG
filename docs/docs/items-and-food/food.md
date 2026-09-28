@@ -66,7 +66,7 @@ Baobab fruit hangs **below Baobab leaves** and grows through five stages (0 to 4
 - If the leaf above the fruit is removed, the fruit falls and drops its fruit.
 - You can **plant a fruit yourself** by right-clicking the underside of a Baobab leaf with a baobab fruit.
 - Eating a fruit **clears all your active potion effects**, and it can be eaten even when you are not hungry. Both are configurable.
-- One baobab fruit crafts into one **Baobab Powder**, used to brew the [Potion of Clarity](../integrations-and-mechanics.md#brewing).
+- One baobab fruit crafts into one **Baobab Powder**, used to brew the [Potion of Clarity](../brewing.md).
 
 ## Berry juice
 

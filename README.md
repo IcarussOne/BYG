@@ -1,21 +1,29 @@
-đ## TemplateDevEnv
-_For Kotlin see [TemplateDevEnvKt](https://github.com/CleanroomMC/TemplateDevEnvKt)_
+# Oh The Biomes You'll Go: Legacy Edition
 
-Template workspace for modding Minecraft 1.12.2. Licensed under MIT, it is made for public use.
+**Oh The Biomes You'll Go: Legacy Edition** (BYG) is an exploration and biome mod for **Minecraft 1.12.2 with Forge**. It brings the original 1.12.2 BYG experience to a Java rewrite, with ~76 biomes.
 
-This template runs on **Java 25**, **Gradle 9.2.1** + **[RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 2.0.2** + **Forge 14.23.5.2847**.
+This edition is based on AOCAWOL's original 1.12.2 mod and is maintained by WinDanesz with AOCAWOL's permission. It does not include content from later versions of BYG or *Oh The Biomes We've Gone*.
 
-With **coremod and mixin support** that is easy to configure.
+> [!TIP]
+> **Explore the [BYG Wiki](https://windanesz.github.io/BYG/)**
+>
+> Find biome guides, recipes, item details, configuration help, and more. The wiki is published through GitHub Pages from this repository's [`docs/`](docs/) directory.
 
-### Instructions:
+## Get the mod
 
-1. Click `use this template` at the top.
-2. Clone the repository that you have created with this template to your local machine.
-3. Make sure IDEA is using Java 25 for Gradle before you sync the project. Verify this by going to IDEA's `Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`.
-4. Open the project folder in IDEA. When prompted, click "Load Gradle Project" as it detects the `build.gradle`, if you weren't prompted, right-click the project's `build.gradle` in IDEA, select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
-5. Run gradle tasks such as `runClient` and `runServer` in the IDEA gradle tab, or use the auto-imported run configurations like `1. Run Client`.
+Download the mod from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-legacy-edition).
 
-### Notes:
-- Dependencies script in [gradle/scripts/dependencies.gradle](gradle/scripts/dependencies.gradle), explanations are commented in the file.
-- Publishing script in [gradle/scripts/publishing.gradle](gradle/scripts/publishing.gradle).
-- When writing Mixins on IntelliJ, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+## Explore
+
+- Discover [~76 biomes](https://windanesz.github.io/BYG/biomes/overview), from forests and wetlands to canyons, islands, and oceans.
+- Build with [trees and wood sets](https://windanesz.github.io/BYG/trees-and-wood/overview), alongside stone, soil, plants, and flowers.
+- Find [creatures](https://windanesz.github.io/BYG/creatures/creatures), [structures](https://windanesz.github.io/BYG/structures), food, and equipment as you travel.
+- Adjust biome weights and enable or disable groups of content through the [configuration](https://windanesz.github.io/BYG/getting-started/configuration).
+
+Questions and discussion are welcome on [Discord](https://discord.gg/wuSsgKwAKv). Bugs can be reported in [GitHub Issues](https://github.com/WinDanesz/BYG/issues).
+
+## Credits and rights
+
+Original BYG by **AOCAWOL**. Legacy Edition rewrite by **WinDanesz**, published with AOCAWOL's permission.
+
+See [LICENSE](LICENSE) for the repository's rights notice.

@@ -87,4 +87,4 @@ Glowcane comes in blue, pink, purple and red. A **Glowcane Stalk** can only be p
 
 <ItemIcon id="baobab_powder" name="Baobab Powder" size={96} />
 
-Made from Baobab Fruit (1 fruit gives 1 powder). It is the ingredient for the [Potion of Clarity](../integrations-and-mechanics.md#brewing).
+Made from Baobab Fruit (1 fruit gives 1 powder). It is the ingredient for the [Potion of Clarity](../brewing.md).
