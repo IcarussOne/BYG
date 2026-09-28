@@ -90,6 +90,22 @@
   color: #b6dd8a;
 }
 
+/* Keep issue reporting visible from every wiki page. */
+.navbar .navbar-report-issue-button {
+  background: var(--byg-green);
+  border-radius: 0.25rem;
+  color: #102b20;
+  font-weight: 600;
+  margin: 0.5rem 0.35rem;
+  order: 1;
+  padding: 0.2rem 0.55rem;
+}
+
+.navbar .navbar-report-issue-button:hover {
+  background: #a0d468;
+  color: #102b20;
+}
+
 /* Pixel-art logo: keep it crisp when scaled. */
 .navbar__logo {
   width: 2rem;

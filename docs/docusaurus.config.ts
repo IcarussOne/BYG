@@ -107,6 +107,12 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://github.com/WinDanesz/BYG/issues',
+          label: 'Report an issue',
+          position: 'right',
+          className: 'navbar-report-issue-button',
+        },
       ],
     },
     footer: {

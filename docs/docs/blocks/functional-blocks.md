@@ -12,8 +12,6 @@ A furnace for smelting [Kasai Ore](../items-and-food/equipment.md#smelting-kasai
 
 - **Light it** by placing fire directly under it (`netherFurnaceIgnitesFromFireBelow`); it goes out if the fire below disappears.
 - While lit, put **Kasai Ore** in the fuel slot's input and **Blaze Powder** in the fuel slot to convert them into Kasai Ingots, one pair every 10 ticks (`netherFurnaceLitTickRate`).
-- An unlit furnace checks about every 2600 ticks (`netherFurnaceTickRate`) whether it should relight.
-- While lit, it occasionally (1% chance by default, `netherFurnaceAmbientEffectChance`) plays a crackling sound and puffs Dragon's Breath-style particles.
 
 ## Crate
 
