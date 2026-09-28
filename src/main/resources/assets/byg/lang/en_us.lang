@@ -915,6 +915,7 @@ item.byg.biome_teleporter.no_biome=(no biome)
 tooltip.byg.biome_teleporter=Creative only. Right-click to teleport to the nearest matching biome.
 message.byg.biome_teleporter.creative_only=Biome teleporters only work in creative mode.
 message.byg.biome_teleporter.invalid_biome=Stack has no valid biome: %s
+message.byg.biome_teleporter.searching=Looking for biome: %s...
 message.byg.biome_teleporter.not_found=Could not find %s within %s blocks (does this world type generate it?).
 message.byg.biome_teleporter.teleported=Teleported to %s at %s, %s.
 tooltip.byg.maple_syrup=Drink for food and Speed, or use it in cooking

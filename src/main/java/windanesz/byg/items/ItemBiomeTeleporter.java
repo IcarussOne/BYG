@@ -12,6 +12,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.Style;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -33,6 +34,7 @@ public class ItemBiomeTeleporter extends Item {
     private static final int TILE_BLOCKS = TILE_CELLS * 4;
     /** Search radius in tiles (~ 25,000 blocks). */
     private static final int MAX_TILE_RADIUS = 48;
+    private static final int COOLDOWN_TICKS = 20;
 
     private static final String TAG_BIOME = "biome";
 
@@ -80,8 +82,10 @@ public class ItemBiomeTeleporter extends Item {
     public String getItemStackDisplayName(ItemStack stack) {
         Biome biome = getBiome(stack);
         ResourceLocation id = getBiomeId(stack);
-        String name = biome != null ? biome.getBiomeName() : id != null ? id.toString() : I18n.format("item.byg.biome_teleporter.no_biome");
-        return I18n.format("item.byg.biome_teleporter.named", name);
+        ITextComponent name = biome != null ? new TextComponentString(biome.getBiomeName())
+                : id != null ? new TextComponentString(id.toString())
+                : new TextComponentTranslation("item.byg.biome_teleporter.no_biome");
+        return new TextComponentTranslation("item.byg.biome_teleporter.named", name).getUnformattedText();
     }
 
     @Override
@@ -95,6 +99,9 @@ public class ItemBiomeTeleporter extends Item {
         if (world.isRemote || !(player instanceof EntityPlayerMP)) {
             return new ActionResult<>(EnumActionResult.SUCCESS, stack);
         }
+        if (player.getCooldownTracker().hasCooldown(this)) {
+            return new ActionResult<>(EnumActionResult.FAIL, stack);
+        }
         if (!player.capabilities.isCreativeMode) {
             player.sendMessage(msg(TextFormatting.RED, "message.byg.biome_teleporter.creative_only"));
             return new ActionResult<>(EnumActionResult.FAIL, stack);
@@ -104,6 +111,8 @@ public class ItemBiomeTeleporter extends Item {
             player.sendMessage(msg(TextFormatting.RED, "message.byg.biome_teleporter.invalid_biome", String.valueOf(getBiomeId(stack))));
             return new ActionResult<>(EnumActionResult.FAIL, stack);
         }
+        player.getCooldownTracker().setCooldown(this, COOLDOWN_TICKS);
+        player.sendMessage(msg(TextFormatting.GRAY, "message.byg.biome_teleporter.searching", biome.getBiomeName()));
 
         BlockPos target = findBiome(world, biome, player.getPosition());
         if (target == null) {

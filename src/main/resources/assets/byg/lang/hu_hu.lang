@@ -914,6 +914,7 @@ item.byg.biome_teleporter.no_biome=(nincs biom)
 tooltip.byg.biome_teleporter=Csak kreatív módban. Jobb kattintással a legközelebbi megfelelő biomhoz teleportálhatsz.
 message.byg.biome_teleporter.creative_only=A biomteleportálók csak kreatív módban működnek.
 message.byg.biome_teleporter.invalid_biome=A tárgyhoz nem tartozik érvényes biom: %s
+message.byg.biome_teleporter.searching=Biom keresése: %s...
 message.byg.biome_teleporter.not_found=Nem található %s %s blokkon belül (generálódik ebben a világtípusban?).
 message.byg.biome_teleporter.teleported=Teleportálás ide: %s, koordináták: %s, %s.
 tooltip.byg.maple_syrup=Idd meg éhségcsillapításért és gyorsaságért, vagy használd főzéshez
