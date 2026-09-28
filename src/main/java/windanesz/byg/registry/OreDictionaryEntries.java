@@ -174,6 +174,10 @@ public final class OreDictionaryEntries {
             if (block == null || block == Blocks.AIR || block.getRegistryName() == null) {
                 continue;
             }
+            Item item = Item.getItemFromBlock(block);
+            if (item == null || item == Items.AIR) {
+                continue;
+            }
             OreDictionary.registerOre(oreName, block);
         }
     }
