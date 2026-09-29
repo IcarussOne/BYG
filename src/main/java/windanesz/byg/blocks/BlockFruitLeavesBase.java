@@ -77,12 +77,12 @@ public class BlockFruitLeavesBase extends Block {
     @SideOnly(Side.CLIENT)
     @Override
     public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT_MIPPED;
+        return LeavesGraphics.renderLayer(BlockRenderLayer.CUTOUT_MIPPED);
     }
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
-        return false;
+        return LeavesGraphics.isOpaque(BlockRenderLayer.CUTOUT_MIPPED);
     }
 
     @Override

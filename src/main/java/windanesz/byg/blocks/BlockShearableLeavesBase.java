@@ -100,12 +100,12 @@ public class BlockShearableLeavesBase extends Block {
     @SideOnly(Side.CLIENT)
     @Override
     public BlockRenderLayer getRenderLayer() {
-        return this.renderLayer;
+        return LeavesGraphics.renderLayer(this.renderLayer);
     }
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
-        return false;
+        return LeavesGraphics.isOpaque(this.renderLayer);
     }
 
     @Override
