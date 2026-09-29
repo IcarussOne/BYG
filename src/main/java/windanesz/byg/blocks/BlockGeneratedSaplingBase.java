@@ -1,20 +1,16 @@
 package windanesz.byg.blocks;
 
 import net.minecraft.block.BlockFlower;
+import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.client.BYGTab;
@@ -23,7 +19,7 @@ import windanesz.byg.worldgen.treegenerator.TreeGrowthGenerator;
 import java.util.Random;
 import java.util.function.BiPredicate;
 
-public class BlockGeneratedSaplingBase extends BlockFlower {
+public class BlockGeneratedSaplingBase extends BlockFlower implements IGrowable {
     private static final int RANDOM_GROWTH_CHANCE = 7;
     private final TreePlacement[] tickPlacements;
     private final TreePlacement[] bonemealPlacements;
@@ -112,24 +108,20 @@ public class BlockGeneratedSaplingBase extends BlockFlower {
     }
 
     @Override
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand,
-                                    EnumFacing side, float hitX, float hitY, float hitZ) {
-        ItemStack heldItem = entity.getHeldItem(hand);
-        if (heldItem.getItem() != Items.DYE || heldItem.getMetadata() != 15 || this.bonemealPlacements.length == 0) {
-            return true;
-        }
-        if (!world.isRemote && !entity.capabilities.isCreativeMode) {
-            heldItem.shrink(1);
-        }
-        if (this.canAttemptGrowth(world, pos, this.bonemealGrowthCondition)
-                && this.tryGrow(world, pos, this.bonemealPlacements, world.rand)) {
-            return true;
-        }
-        if (world instanceof WorldServer) {
-            ((WorldServer) world).spawnParticle(EnumParticleTypes.VILLAGER_HAPPY, pos.getX(), pos.getY(), pos.getZ(),
-                    5, 3.0, 3.0, 3.0, 1.0, new int[0]);
-        }
+    public boolean canGrow(World world, BlockPos pos, IBlockState state, boolean isClient) {
+        return this.bonemealPlacements.length > 0;
+    }
+
+    @Override
+    public boolean canUseBonemeal(World world, Random random, BlockPos pos, IBlockState state) {
         return true;
+    }
+
+    @Override
+    public void grow(World world, Random random, BlockPos pos, IBlockState state) {
+        if (this.canAttemptGrowth(world, pos, this.bonemealGrowthCondition)) {
+            this.tryGrow(world, pos, this.bonemealPlacements, random);
+        }
     }
 
     private boolean canAttemptGrowth(World world, BlockPos pos, BiPredicate<World, BlockPos> condition) {
