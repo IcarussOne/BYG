@@ -135,7 +135,7 @@ public class BlockGeneratedSaplingBase extends BlockFlower implements IGrowable 
             return false;
         }
         for (TreePlacement placement : placements) {
-            if (random.nextDouble() < placement.chance && placement.generator.generate(world, random, growthOrigin)) {
+            if (random.nextDouble() < placement.chance && placement.generator.growTree(world, random, growthOrigin)) {
                 return true;
             }
         }

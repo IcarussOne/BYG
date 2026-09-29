@@ -31,6 +31,11 @@ public final class PineTreeGenerator extends WorldGenAbstractTree implements Tre
     }
 
     @Override
+    public boolean growTree(World world, Random random, BlockPos position) {
+        return this.generate(world, random, position);
+    }
+
+    @Override
     public boolean generate(World world, Random random, BlockPos position) {
         BlockPos trunkOrigin = position;
         boolean large = this.size == Size.LARGE;

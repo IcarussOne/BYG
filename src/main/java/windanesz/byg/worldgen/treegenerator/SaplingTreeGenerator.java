@@ -123,6 +123,11 @@ public final class SaplingTreeGenerator extends WorldGenAbstractTree implements 
     }
 
     @Override
+    public boolean growTree(World world, Random random, BlockPos position) {
+        return this.generate(world, random, position);
+    }
+
+    @Override
     public boolean generate(World world, Random random, BlockPos position) {
         if (this.style == TreeStyle.EBONY) {
             return this.generateEbony(world, random, position);

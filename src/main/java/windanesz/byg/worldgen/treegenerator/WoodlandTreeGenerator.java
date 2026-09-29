@@ -20,6 +20,11 @@ public abstract class WoodlandTreeGenerator extends WorldGenAbstractTree impleme
         super(false);
     }
 
+    @Override
+    public boolean growTree(World world, Random random, BlockPos position) {
+        return this.generate(world, random, position);
+    }
+
     /** Log state for a trunk running along the given axis (vertical = SOUTH, X = UP, Z = EAST). */
     protected static IBlockState log(IBlockState log, EnumFacing.Axis axis) {
         EnumFacing facing = axis == EnumFacing.Axis.Y ? EnumFacing.SOUTH
