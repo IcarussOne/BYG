@@ -74,7 +74,7 @@ Chaparral bushes cover these low, nearly flat grasslands.
 
 <BiomeScreenshot id="byg_flowering_plains" name="Flowering Plains" />
 
-These open plains are known for their dense spread of wildflowers.
+These open plains are known for their huge flowers and dense spread of wildflowers.
 
 | | |
 |---|---|
