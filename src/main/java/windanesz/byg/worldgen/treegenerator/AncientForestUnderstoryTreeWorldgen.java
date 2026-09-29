@@ -21,7 +21,7 @@ public final class AncientForestUnderstoryTreeWorldgen {
     }
 
     public static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
         int attempts = Config.scaleClusterPlantAttempts(16);
         for (int i = 0; i < attempts; i++) {
             int x = chunkX + random.nextInt(16);

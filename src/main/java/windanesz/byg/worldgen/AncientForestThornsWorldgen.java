@@ -18,7 +18,7 @@ final class AncientForestThornsWorldgen {
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
         if (ModBlocks.thorn_block == null || ModBlocks.thorn_branches == null) return;
-        if (dimID != 0 || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")
+        if (!Config.isFeatureDimension(dimID) || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")
                 || random.nextInt(1000000) >= Config.scaleTemplateChance(150000)) return;
         for (int attempt = 0; attempt < 3; attempt++) {
             int x = chunkX + 4 + random.nextInt(8);

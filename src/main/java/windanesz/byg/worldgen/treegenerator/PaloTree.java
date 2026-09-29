@@ -10,6 +10,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.structure.template.Template;
+import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
 import windanesz.byg.worldgen.BygTreePlacement;
 import windanesz.byg.worldgen.TemplateWorldgenHelper;
@@ -31,7 +32,7 @@ public final class PaloTree {
     }
 
     public static void generateWorld(Random random, int chunkCenterX, int chunkCenterZ, World world, int dimID) {
-        if (dimID != 0 || world.isRemote || random.nextInt(100) >= 5) {
+        if (!Config.isFeatureDimension(dimID) || world.isRemote || random.nextInt(100) >= 5) {
             return;
         }
 

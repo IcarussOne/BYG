@@ -797,6 +797,16 @@ public final class Config {
         return Math.max(0.0D, blockSettings.crystalCanyonWhiteTemplateChance);
     }
 
+    public static boolean isFeatureDimension(int dimensionId) {
+        ensureBaked();
+        for (int featureDimension : worldgenSettings.featureDimensions) {
+            if (featureDimension == dimensionId) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static int scaleTemplateChance(int chancePerMillion) {
         ensureBaked();
         return Math.max(0, (int) Math.round(chancePerMillion * worldgenSettings.templateChanceMultiplier));
@@ -1958,6 +1968,9 @@ public final class Config {
     }
 
     public static final class WorldgenSettings {
+        @net.minecraftforge.common.config.Config.Comment("Dimension IDs where BYG's surface and underground world features generate (structures, trees, plants, ground patches and overworld ores). Features still only appear in their matching biomes, so add a dimension here only if it uses BYG or vanilla overworld biomes. Kasai ore always generates in the Nether.")
+        public int[] featureDimensions = {0};
+
         @net.minecraftforge.common.config.Config.Comment("Multiplies the per-chunk spawn chance of BYG template-based and related rare features in new chunks. 1.0 is the default; 0 skips these chance checks. Higher values cannot raise a chance above 100%.")
         @net.minecraftforge.common.config.Config.RangeDouble(min = 0.0, max = 10.0)
         public double templateChanceMultiplier = 1.0D;

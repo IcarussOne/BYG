@@ -77,7 +77,7 @@ public final class TemplateWorldgenHelper {
 
     public static void generate(Random random, int chunkX, int chunkZ, World world, int dimID,
                                 ResourceLocation biomeId, Config config) {
-        if (dimID != 0 || world.isRemote || !windanesz.byg.Config.isTemplateEnabled(config.templatePath)) {
+        if (!windanesz.byg.Config.isFeatureDimension(dimID) || world.isRemote || !windanesz.byg.Config.isTemplateEnabled(config.templatePath)) {
             return;
         }
         int configuredChance = windanesz.byg.Config.scaleTemplateChance(config.chancePerMillion);

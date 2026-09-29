@@ -65,7 +65,7 @@ final class ZelkovaWorldgen {
 
     private static void generate(Random random, int chunkX, int chunkZ, World world, int dimension, int variant) {
         int chance = Config.scaleTemplateChance(990000);
-        if (dimension != 0 || chance <= 0 || random.nextInt(1000000) >= chance) {
+        if (!Config.isFeatureDimension(dimension) || chance <= 0 || random.nextInt(1000000) >= chance) {
             return;
         }
         Biome biome = world.getBiome(new BlockPos(chunkX, 128, chunkZ));

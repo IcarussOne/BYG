@@ -26,7 +26,7 @@ public final class PalmWorldgen {
 
     /** {@code chunkX}/{@code chunkZ} carry Forge's +8 decoration offset. */
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimension) {
-        if (dimension != 0 || world.isRemote || !Config.isPalmContentEnabled()) {
+        if (!Config.isFeatureDimension(dimension) || world.isRemote || !Config.isPalmContentEnabled()) {
             return;
         }
         int chance = Config.scaleTemplateChance(CHANCE_PER_MILLION);

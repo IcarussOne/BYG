@@ -12,7 +12,7 @@ final class AncientForestCanopyWebWorldgen {
     private AncientForestCanopyWebWorldgen() {}
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
+        if (!Config.isFeatureDimension(dimID) || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
         int limit = Config.scaleClusterPlantAttempts(5);
         int placed = 0;
         int start = random.nextInt(256);

@@ -18,7 +18,7 @@ final class AncientForestMushroomWorldgen {
     }
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
         int attempts = Config.scaleClusterPlantAttempts(1);
         for (int i = 0; i < attempts; i++) {
             if (random.nextInt(2) != 0) continue;

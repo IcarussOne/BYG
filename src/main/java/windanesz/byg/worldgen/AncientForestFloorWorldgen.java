@@ -19,7 +19,7 @@ public final class AncientForestFloorWorldgen {
     }
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) {
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) {
             return;
         }
 
@@ -92,7 +92,7 @@ public final class AncientForestFloorWorldgen {
     }
 
     static void generateGroundPatches(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
         int patches = Config.scaleClusterPlantAttempts(2);
         for (int i = 0; i < patches; i++) {
             int centerX = chunkX + random.nextInt(16);

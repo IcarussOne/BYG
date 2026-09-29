@@ -20,7 +20,7 @@ public final class AncientForestWorldTreeWorldgen {
     private AncientForestWorldTreeWorldgen() {}
 
     public static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")
+        if (!Config.isFeatureDimension(dimID) || world.isRemote || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")
                 || Config.scaleTemplateChance(700) <= random.nextInt(1000000)) return;
         // The +8 decoration offset makes this 27-block footprint fit inside
         // Forge's loaded 2x2 chunk window, with two blocks left at each edge.

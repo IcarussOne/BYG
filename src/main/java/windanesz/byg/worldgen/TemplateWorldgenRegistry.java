@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import windanesz.byg.Config;
 
 public final class TemplateWorldgenRegistry {
     private static final TemplateWorldgenHelper.Config[] CONFIGS = new TemplateWorldgenHelper.Config[]{
@@ -3002,7 +3003,7 @@ public final class TemplateWorldgenRegistry {
      * Generates all configured templates for the given chunk and world.
      */
     public static void generateAll(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || world.isRemote) {
+        if (!Config.isFeatureDimension(dimID) || world.isRemote) {
             return;
         }
         ResourceLocation biomeId = Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos(chunkX, 128, chunkZ)));

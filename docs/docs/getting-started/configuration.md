@@ -269,6 +269,7 @@ Tuning for world generation in new chunks. Attempt multipliers change how many t
 
 | Setting | Default | Range | Restart | Description |
 |---|---|---|:-:|---|
+| `featureDimensions` | `[0]` |  |  | Dimension IDs where BYG's surface and underground world features generate (structures, trees, plants, ground patches and overworld ores). Features still only appear in their matching biomes, so add a dimension only if it uses BYG or vanilla overworld biomes. Kasai ore always generates in the Nether. |
 | `templateChanceMultiplier` | `1.0` | 0.0 to 10.0 |  | Multiplies the per-chunk spawn chance of BYG template-based and related rare features. 0 skips these chance checks; higher values cannot raise a chance above 100%. |
 | `flowerAttemptMultiplier` | `1.0` | 0.0 to 10.0 |  | Multiplies BYG flower patch placement attempts in matching biomes when generating new chunks. 0 skips these attempts. Increase gradually: higher values add generation work but do not guarantee proportionally more flowers because placement needs valid spots. |
 | `clusterPlantAttemptMultiplier` | `1.0` | 0.0 to 10.0 |  | Multiplies BYG clustered plant and ground-cover patch attempts when generating new chunks, including reeds, shrubs, and forest floor plants. 0 skips most scaled attempts. Increase gradually: this affects many features and adds generation work, while valid placement spots still limit results. |

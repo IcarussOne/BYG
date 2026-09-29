@@ -100,7 +100,7 @@ public final class FlowerWorldgenRegistry {
     }
 
     public static void generateAll(Random random, int chunkX, int chunkZ, World world, int dimID, IChunkGenerator cg, IChunkProvider cp) {
-        if (dimID != 0) {
+        if (!windanesz.byg.Config.isFeatureDimension(dimID)) {
             return;
         }
         ResourceLocation biomeId = Biome.REGISTRY.getNameForObject(world.getBiome(new BlockPos(chunkX, 128, chunkZ)));

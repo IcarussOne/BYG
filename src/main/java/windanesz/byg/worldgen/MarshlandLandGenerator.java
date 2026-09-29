@@ -8,6 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.NoiseGeneratorSimplex;
+import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public final class MarshlandLandGenerator {
     }
 
     public static void generate(Random random, int blockX, int blockZ, World world, int dimensionId) {
-        if (dimensionId != 0 || world.isRemote) {
+        if (!Config.isFeatureDimension(dimensionId) || world.isRemote) {
             return;
         }
 

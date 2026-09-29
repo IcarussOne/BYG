@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootTableList;
 
 import java.util.Random;
+import windanesz.byg.Config;
 
 final class GreatLakesIslandWorldgen {
     private static final String BIOME_ID = "byg:byg_great_lakes";
@@ -36,7 +37,7 @@ final class GreatLakesIslandWorldgen {
     }
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || random.nextInt(CHUNK_CHANCE) != 0) {
+        if (!Config.isFeatureDimension(dimID) || random.nextInt(CHUNK_CHANCE) != 0) {
             return;
         }
         // Each axis gets its own radius so islands come out slightly oval.

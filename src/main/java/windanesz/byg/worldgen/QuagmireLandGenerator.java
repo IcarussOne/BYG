@@ -25,7 +25,7 @@ public final class QuagmireLandGenerator {
     }
 
     public static void generate(Random random, int blockX, int blockZ, World world, int dimensionId) {
-        if (dimensionId != 0 || world.isRemote || !isQuagmire(world, blockX, blockZ)) {
+        if (!Config.isFeatureDimension(dimensionId) || world.isRemote || !isQuagmire(world, blockX, blockZ)) {
             return;
         }
 

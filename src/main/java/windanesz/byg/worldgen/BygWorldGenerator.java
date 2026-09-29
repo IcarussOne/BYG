@@ -177,7 +177,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
 
     private static void generateReedCluster(Random random, int chunkX, int chunkZ, World world, int dimID, Supplier<Block> blockSupplier,
                                             int attempts, int maxHeight, String... biomeIds) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, biomeIds)) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, biomeIds)) {
             return;
         }
         Block block = blockSupplier.get();
@@ -223,7 +223,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     private static void generateCrystalCanyonGrass(Random random, int chunkX, int chunkZ, World world, int dimID) {
         boolean tall = Config.isWorldgenFeatureEnabled("dead_grass");
         boolean shortGrass = Config.isWorldgenFeatureEnabled("short_dead_grass");
-        if (dimID != 0 || (!tall && !shortGrass) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_crystal_canyons")) {
+        if (!Config.isFeatureDimension(dimID) || (!tall && !shortGrass) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_crystal_canyons")) {
             return;
         }
         int patches = Config.scaleClusterPlantAttempts(2);
@@ -252,7 +252,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateFloatingMangroveLogs(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_mangrove_marshes") || random.nextInt(3) != 0) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_mangrove_marshes") || random.nextInt(3) != 0) {
             return;
         }
 
@@ -282,7 +282,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateFallenBirchLogs(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_seasonal_birch_forest")) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_seasonal_birch_forest")) {
             return;
         }
         int attempts = Math.max(1, Config.scaleClusterPlantAttempts(2));
@@ -335,7 +335,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateBirchShelfFungi(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_seasonal_birch_forest")) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_seasonal_birch_forest")) {
             return;
         }
         int attempts = Config.scaleClusterPlantAttempts(8);
@@ -425,7 +425,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateEnchantedForestGlowshrooms(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !Config.isWoodSetEnabled("glowshroom")
+        if (!Config.isFeatureDimension(dimID) || !Config.isWoodSetEnabled("glowshroom")
                 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_enchanted_forest")) {
             return;
         }
@@ -453,7 +453,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateEnchantedForestDoubleGrass(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || random.nextInt(4) != 0
+        if (!Config.isFeatureDimension(dimID) || random.nextInt(4) != 0
                 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_enchanted_forest")) {
             return;
         }
@@ -479,7 +479,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
         if (ModBlocks.leaf_pile_dead == null) {
             return;
         }
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ,
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ,
                 "byg:byg_seasonal_forest",
                 "byg:byg_bog",
                 "byg:byg_seasonal_deciduous",
@@ -511,7 +511,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     private static void generateAlgaePatches(Random random, int chunkX, int chunkZ, World world, int dimID) {
         boolean isMarshlands = matchesBiome(world, chunkX, chunkZ, "byg:byg_marshlands");
         boolean isCypressSwamplands = matchesBiome(world, chunkX, chunkZ, "byg:byg_cypress_swamplands");
-        if (dimID != 0 || (!matchesSwampBiome(world, chunkX, chunkZ)
+        if (!Config.isFeatureDimension(dimID) || (!matchesSwampBiome(world, chunkX, chunkZ)
                 && !matchesBiome(world, chunkX, chunkZ, "byg:byg_quagmire") && !isMarshlands)) {
             return;
         }
@@ -548,7 +548,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void capCypressSwamplandsWater(World world, int chunkX, int chunkZ, int dimID) {
-        if (dimID != 0) {
+        if (!Config.isFeatureDimension(dimID)) {
             return;
         }
 
@@ -579,7 +579,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     }
 
     private static void generateFloatingMarshlandLogs(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, "byg:byg_marshlands") || random.nextInt(4) != 0) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, "byg:byg_marshlands") || random.nextInt(4) != 0) {
             return;
         }
 
@@ -798,7 +798,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
 
     private static void generateSandDeposit(Random random, int chunkX, int chunkZ, World world, int dimID, Supplier<Block> blockSupplier,
                                             int minY, int yRange, String... biomeIds) {
-        if (dimID != 0 || !matchesBiome(world, chunkX, chunkZ, biomeIds)) {
+        if (!Config.isFeatureDimension(dimID) || !matchesBiome(world, chunkX, chunkZ, biomeIds)) {
             return;
         }
         Block block = blockSupplier.get();
@@ -818,7 +818,7 @@ public final class BygWorldGenerator implements IWorldGenerator {
     private static void generateMinableDeposit(Random random, int chunkX, int chunkZ, World world, int dimID, int requiredDimension,
                                                Supplier<Block> blockSupplier, double attempts, int minY, int yRange, int veinSize,
                                                Predicate<IBlockState> targetPredicate, String... biomeIds) {
-        if (dimID != requiredDimension) {
+        if (requiredDimension == 0 ? !Config.isFeatureDimension(dimID) : dimID != requiredDimension) {
             return;
         }
         if (biomeIds.length > 0 && !matchesBiome(world, chunkX, chunkZ, biomeIds)) {

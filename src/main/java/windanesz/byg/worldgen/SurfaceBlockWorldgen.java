@@ -6,6 +6,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
 
 import java.util.Random;
@@ -15,7 +16,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generatePeatgrass(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_pine_mountains", "byg:byg_boreal_forest", "byg:byg_coniferous_forest", "byg:byg_pine_lowlands")) {
             return;
         }
@@ -33,7 +34,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateRockyGrass(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_bluff_mountains", "byg:byg_stone_brushlands")) {
             return;
         }
@@ -51,7 +52,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateRockyGrassAlps(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ, "byg:byg_alps")) {
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ, "byg:byg_alps")) {
             return;
         }
         for (int i = 0; i < 32; ++i) {
@@ -68,7 +69,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateRockystone(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_snowy_pine_mountains", "byg:byg_pine_mountains")) {
             return;
         }
@@ -76,7 +77,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateRockystoneInBluffs(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_bluff_mountains", "byg:byg_stone_brushlands")) {
             return;
         }
@@ -98,7 +99,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateSandygrass(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_lush_desert", "byg:byg_outback")) {
             return;
         }
@@ -119,7 +120,7 @@ final class SurfaceBlockWorldgen {
     }
 
     static void generateSodalite(Random random, int blockX, int blockZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, blockX, blockZ,
                 "byg:byg_sonoran_desert", "byg:byg_shrublands", "byg:byg_savanna_canopy", "byg:byg_dunes", "byg:byg_red_desert",
                 "byg:byg_dead_sea", "byg:byg_baobab_savanna", "byg:byg_chaparral_lowlands", "byg:byg_outback",
                 "byg:byg_lush_desert", "desert", "desert_hills", "savanna", "savanna_rock", "mesa", "mesa_rock",

@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Random;
+import windanesz.byg.Config;
 
 final class AncientForestStoneWorldgen {
     private static final IBlockState MOSSY = Blocks.MOSSY_COBBLESTONE.getDefaultState();
@@ -17,7 +18,7 @@ final class AncientForestStoneWorldgen {
     }
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
-        if (dimID != 0 || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
+        if (!Config.isFeatureDimension(dimID) || !BygWorldGenerator.matchesBiome(world, chunkX, chunkZ, "byg:byg_ancient_forest")) return;
         if (random.nextInt(3) == 0) {
             placePile(random, chunkX + 3 + random.nextInt(10), chunkZ + 3 + random.nextInt(10), world);
         }

@@ -15,7 +15,7 @@ final class FrozenOakWorldgen {
 
     static void generate(Random random, int chunkX, int chunkZ, World world, int dimID) {
         int chance = Config.scaleTemplateChance(CHANCE_PER_MILLION);
-        if (dimID != 0 || world.isRemote || !Config.isWoodSetEnabled("frozen_oak") || chance <= 0 || random.nextInt(1000000) >= chance) {
+        if (!Config.isFeatureDimension(dimID) || world.isRemote || !Config.isWoodSetEnabled("frozen_oak") || chance <= 0 || random.nextInt(1000000) >= chance) {
             return;
         }
         int x = chunkX + random.nextInt(16);
