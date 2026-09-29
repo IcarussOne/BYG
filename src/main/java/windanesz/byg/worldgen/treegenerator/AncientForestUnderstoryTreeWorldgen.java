@@ -9,6 +9,7 @@ import net.minecraft.world.World;
 import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
 import windanesz.byg.worldgen.AncientForestFloorWorldgen;
+import windanesz.byg.worldgen.BygTreePlacement;
 import windanesz.byg.worldgen.BygWorldGenerator;
 
 import java.util.LinkedHashMap;
@@ -27,7 +28,7 @@ public final class AncientForestUnderstoryTreeWorldgen {
             int z = chunkZ + random.nextInt(16);
             if (!BygWorldGenerator.matchesBiome(world, x, z, "byg:byg_ancient_forest")) continue;
             BlockPos ground = AncientForestFloorWorldgen.findGround(world, x, z);
-            if (ground == null || !hasRootRoom(world, ground)) continue;
+            if (ground == null || !hasRootRoom(world, ground) || !BygTreePlacement.allowTrees(world, random, ground)) continue;
             placeTree(world, random, ground);
         }
     }

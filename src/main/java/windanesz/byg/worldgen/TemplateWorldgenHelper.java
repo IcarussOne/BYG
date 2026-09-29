@@ -20,8 +20,15 @@ import windanesz.byg.BiomesYouGo;
 import windanesz.byg.registry.ModBlocks;
 
 import java.util.Random;
+import java.util.regex.Pattern;
 
 public final class TemplateWorldgenHelper {
+    /** Template names that are trees, gated by {@link BygTreePlacement}. Bushes, logs and buildings are not. */
+    private static final Pattern TREE_TEMPLATE = Pattern.compile("(af_tree|ancient_tree|baobab_?tree|bayoutree(glow)?|bluespruce"
+            + "|bog_tree|borealtree|cikatree|cypresstree|dstree|dtree|evergreen_tree|greatoak_tree|ironwood|mahoganytree(_bird)?"
+            + "|mead_tree|northern_tree|orangespruce|orch_tree|palo_verde|rainbow_tree|redoak_tree|redspruce|sc_tree|seasonbirch"
+            + "|sf_(tree)?|spruce|tbluespruce|torangespruce|tspruce|tyellowspruce|yellowspruce)_?\\d*");
+
     private static final Logger LOGGER = LogManager.getLogger(BiomesYouGo.MODID);
     /**
      * Template placement notifies neighboring blocks after writing. Leave two
@@ -75,6 +82,9 @@ public final class TemplateWorldgenHelper {
         }
         int configuredChance = windanesz.byg.Config.scaleTemplateChance(config.chancePerMillion);
         if (configuredChance <= 0 || random.nextInt(1000000) >= configuredChance) {
+            return;
+        }
+        if (config.tree && !BygTreePlacement.allowTrees(world, random, new BlockPos(chunkX, 128, chunkZ))) {
             return;
         }
 
@@ -571,6 +581,7 @@ public final class TemplateWorldgenHelper {
         private final HeightScan heightScan;
         private final GroundMatcher[] groundMatchers;
         private final ResourceLocation[] biomeIds;
+        private final boolean tree;
 
         private Config(int chancePerMillion, String templatePath, int spawnYOffset, HeightScan heightScan, String[] biomeIds, GroundMatcher[] groundMatchers) {
             this.chancePerMillion = chancePerMillion;
@@ -578,6 +589,7 @@ public final class TemplateWorldgenHelper {
             this.spawnYOffset = spawnYOffset;
             this.heightScan = heightScan;
             this.groundMatchers = groundMatchers;
+            this.tree = TREE_TEMPLATE.matcher(templatePath).matches();
             this.biomeIds = new ResourceLocation[biomeIds.length];
             for (int index = 0; index < biomeIds.length; index++) {
                 this.biomeIds[index] = new ResourceLocation(biomeIds[index]);

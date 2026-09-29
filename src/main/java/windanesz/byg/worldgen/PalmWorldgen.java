@@ -48,7 +48,7 @@ public final class PalmWorldgen {
         }
 
         BlockPos ground = findSurface(world, x, z);
-        if (ground == null || !isPalmSand(world.getBlockState(ground))) {
+        if (ground == null || !isPalmSand(world.getBlockState(ground)) || !BygTreePlacement.allowTrees(world, random, ground)) {
             return;
         }
         newGenerator().generate(world, random, ground.up());

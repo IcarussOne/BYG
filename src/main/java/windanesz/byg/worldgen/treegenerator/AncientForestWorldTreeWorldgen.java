@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
 import windanesz.byg.worldgen.AncientForestFloorWorldgen;
+import windanesz.byg.worldgen.BygTreePlacement;
 import windanesz.byg.worldgen.BygWorldGenerator;
 
 import java.util.Random;
@@ -50,6 +51,7 @@ public final class AncientForestWorldTreeWorldgen {
             }
         }
 
+        if (!BygTreePlacement.allowTrees(world, random, ground)) return;
         IBlockState log = ModBlocks.great_oak_log.getDefaultState();
         IBlockState wood = ModBlocks.great_oak_wood.getDefaultState();
         IBlockState leaves = ModBlocks.great_oak_leaves.getDefaultState();

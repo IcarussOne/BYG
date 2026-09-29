@@ -69,7 +69,8 @@ final class ZelkovaWorldgen {
             return;
         }
         Biome biome = world.getBiome(new BlockPos(chunkX, 128, chunkZ));
-        if (world.isRemote || !FOREST.equals(Biome.REGISTRY.getNameForObject(biome))) {
+        if (world.isRemote || !FOREST.equals(Biome.REGISTRY.getNameForObject(biome))
+                || !BygTreePlacement.allowTrees(world, random, new BlockPos(chunkX, 128, chunkZ))) {
             return;
         }
 

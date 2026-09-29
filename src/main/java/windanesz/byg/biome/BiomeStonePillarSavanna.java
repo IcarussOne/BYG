@@ -223,7 +223,7 @@ public class BiomeStonePillarSavanna extends Biome {
             BlockPos treePos = worldIn.getHeight(pos.add(rand.nextInt(16) + 8, 0, rand.nextInt(16) + 8));
             WorldGenAbstractTree tree = getRandomDryOakFeature(rand);
             tree.setDecorationDefaults();
-            if (tree.generate(worldIn, rand, treePos)) {
+            if (BygTreePlacement.allowTrees(worldIn, rand, treePos) && tree.generate(worldIn, rand, treePos)) {
                 tree.generateSaplings(worldIn, rand, treePos);
             }
         }

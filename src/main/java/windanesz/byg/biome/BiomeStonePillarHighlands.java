@@ -12,6 +12,7 @@ import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenVines;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import windanesz.byg.worldgen.BygTreePlacement;
 import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
 import windanesz.byg.worldgen.WorldGenStonePillarHighlands;
 
@@ -152,7 +153,7 @@ public class BiomeStonePillarHighlands extends Biome {
             BlockPos surfacePos = worldIn.getHeight(new BlockPos(x, 0, z));
             
             // Only on elevated positions (cliff edges)
-            if (surfacePos.getY() > 90 && rand.nextInt(3) == 0) {
+            if (surfacePos.getY() > 90 && rand.nextInt(3) == 0 && BygTreePlacement.allowTrees(worldIn, rand, surfacePos)) {
                 CLIFF_PINE_TREE.generate(worldIn, rand, surfacePos.up());
             }
         }

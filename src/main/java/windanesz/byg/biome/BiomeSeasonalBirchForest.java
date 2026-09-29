@@ -10,6 +10,7 @@ import net.minecraft.world.gen.feature.WorldGenBirchTree;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import windanesz.byg.worldgen.BygTreePlacement;
 
 import java.util.Random;
 
@@ -66,7 +67,7 @@ public class BiomeSeasonalBirchForest
             BlockPos treePos = worldIn.getHeight(chunkPos.add(rand.nextInt(16) + 8, 0, rand.nextInt(16) + 8));
             WorldGenAbstractTree tree = this.getRandomTreeFeature(rand);
             tree.setDecorationDefaults();
-            if (tree.generate(worldIn, rand, treePos)) {
+            if (BygTreePlacement.allowTrees(worldIn, rand, treePos) && tree.generate(worldIn, rand, treePos)) {
                 tree.generateSaplings(worldIn, rand, treePos);
             }
         }

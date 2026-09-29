@@ -11,6 +11,7 @@ import net.minecraft.world.WorldServer;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.structure.template.Template;
 import windanesz.byg.registry.ModBlocks;
+import windanesz.byg.worldgen.BygTreePlacement;
 import windanesz.byg.worldgen.TemplateWorldgenHelper;
 
 import java.util.Random;
@@ -69,7 +70,7 @@ public final class PaloTree {
                 z - (bounds[2] + bounds[3]) / 2);
         if (origin.getY() < 0 || origin.getY() + template.getSize().getY() > world.getActualHeight()
                 || !TemplateWorldgenHelper.fitsCurrentChunk(template, origin, rotation, mirror,
-                chunkCenterX - 8, chunkCenterZ - 8)) {
+                chunkCenterX - 8, chunkCenterZ - 8) || !BygTreePlacement.allowTrees(world, random, surface)) {
             return;
         }
         TemplateWorldgenHelper.placeTemplateWithSettings(world, template, origin,
