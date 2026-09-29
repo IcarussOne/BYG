@@ -11,6 +11,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.event.terraingen.TerrainGen;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.client.BYGTab;
@@ -130,7 +131,7 @@ public class BlockGeneratedSaplingBase extends BlockFlower implements IGrowable 
 
     private boolean tryGrow(World world, BlockPos pos, TreePlacement[] placements, Random random) {
         BlockPos growthOrigin = this.resolveGrowthOrigin(world, pos);
-        if (growthOrigin == null) {
+        if (growthOrigin == null || !TerrainGen.saplingGrowTree(world, random, growthOrigin)) {
             return false;
         }
         for (TreePlacement placement : placements) {
