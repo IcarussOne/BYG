@@ -1,6 +1,7 @@
 package windanesz.byg.client;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLeaves;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.item.Item;
@@ -13,18 +14,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import windanesz.byg.BiomesYouGo;
 import windanesz.byg.blocks.BlockAlgae;
-import windanesz.byg.blocks.BlockFruitLeavesBase;
-import windanesz.byg.blocks.BlockShearableLeavesBase;
-import windanesz.byg.blocks.LeafDecay;
+import windanesz.byg.blocks.BlockBygLeaves;
 import windanesz.byg.items.ItemBiomeTeleporter;
 import windanesz.byg.registry.ModBlocks;
 import windanesz.byg.registry.ModItems;
 
 @Mod.EventBusSubscriber(modid = BiomesYouGo.MODID, value = Side.CLIENT)
 public final class BYGModels {
-    // check_decay tracks leaf decay state only; it never changes which model is used, so the renderer
-    // must ignore it or it would look for blockstate variants ("check_decay=true" etc.) that don't exist.
-    private static final StateMap LEAF_DECAY_STATE_MAP = new StateMap.Builder().ignore(LeafDecay.CHECK_DECAY).build();
+    // check_decay and decayable track leaf decay state only; they never change which model is used, so the renderer
+    // must ignore them or it would look for blockstate variants ("check_decay=true" etc.) that don't exist.
+    private static final StateMap LEAF_DECAY_STATE_MAP = new StateMap.Builder().ignore(BlockLeaves.CHECK_DECAY, BlockLeaves.DECAYABLE).build();
 
     private BYGModels() {
     }
@@ -38,7 +37,7 @@ public final class BYGModels {
             }
         }
         for (Block block : Block.REGISTRY) {
-            if (block instanceof BlockShearableLeavesBase || block instanceof BlockFruitLeavesBase) {
+            if (block instanceof BlockBygLeaves) {
                 ModelLoader.setCustomStateMapper(block, LEAF_DECAY_STATE_MAP);
             }
         }
