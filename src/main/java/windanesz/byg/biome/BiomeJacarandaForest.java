@@ -12,7 +12,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -53,13 +53,12 @@ public class BiomeJacarandaForest
     }
 
     public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
-        return new SaplingTreeGenerator(
-                () -> windanesz.byg.registry.ModBlocks.jacaranda_log.getDefaultState(),
-                () -> windanesz.byg.registry.ModBlocks.jacaranda_leaves.getDefaultState(),
-                rand.nextInt(3) == 0
-                        ? SaplingTreeGenerator.TreeStyle.JACARANDA_TALL
-                        : SaplingTreeGenerator.TreeStyle.JACARANDA,
-                rand.nextInt(3) != 0 ? 8 : 6, 2);
+        boolean tall = rand.nextInt(3) == 0;
+        boolean large = rand.nextInt(3) != 0;
+        if (tall) {
+            return large ? BygTrees.JACARANDA_TALL : BygTrees.JACARANDA_TALL_SHORT;
+        }
+        return large ? BygTrees.JACARANDA_LARGE : BygTrees.JACARANDA;
     }
 
     static class CustomTree

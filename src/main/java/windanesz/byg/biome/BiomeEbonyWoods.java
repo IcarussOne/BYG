@@ -17,8 +17,7 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -62,9 +61,7 @@ public class BiomeEbonyWoods
         if (rand.nextInt(8) == 0) {
             return new CustomTree();
         }
-        return new SaplingTreeGenerator(() -> ModBlocks.ebony_log.getDefaultState(),
-                () -> ModBlocks.ebony_leaves.getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.EBONY, 11, 4);
+        return BygTrees.EBONY;
     }
 
     @Override

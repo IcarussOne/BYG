@@ -8,6 +8,7 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.registry.ModBlocks;
+import windanesz.byg.worldgen.treegenerator.BygWood;
 import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
 
 import java.util.ArrayList;
@@ -24,20 +25,17 @@ public class BiomeEnchantedForest extends Biome {
     // blue tree standing in for the 30-block template.
     private static WorldGenAbstractTree[] buildTrees() {
         List<Supplier<IBlockState>> logs = Arrays.<Supplier<IBlockState>>asList(
-                () -> ModBlocks.enchanted_log.getDefaultState(),
+                BygWood.BLUE_ENCHANTED.log(),
                 () -> ModBlocks.green_enchanted_log.getDefaultState());
-        List<Supplier<IBlockState>> leaves = Arrays.<Supplier<IBlockState>>asList(
-                () -> ModBlocks.enchanted_leaves_blue.getDefaultState(),
-                () -> ModBlocks.enchanted_leaves_pink.getDefaultState(),
-                () -> ModBlocks.enchanted_leaves_purple.getDefaultState());
+        List<BygWood> woods = Arrays.asList(BygWood.BLUE_ENCHANTED, BygWood.PINK_ENCHANTED, BygWood.PURPLE_ENCHANTED);
         List<WorldGenAbstractTree> trees = new ArrayList<>();
         for (Supplier<IBlockState> log : logs) {
-            for (Supplier<IBlockState> leaf : leaves) {
-                trees.add(new SaplingTreeGenerator(log, leaf, SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 16, 3));
-                trees.add(new SaplingTreeGenerator(log, leaf, SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 12, 2));
-                trees.add(new SaplingTreeGenerator(log, leaf, SaplingTreeGenerator.TreeStyle.ENCHANTED_STEPPED, 9, 2));
+            for (BygWood wood : woods) {
+                trees.add(new SaplingTreeGenerator(log, wood.leaves(), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 16, 3));
+                trees.add(new SaplingTreeGenerator(log, wood.leaves(), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 12, 2));
+                trees.add(new SaplingTreeGenerator(log, wood.leaves(), SaplingTreeGenerator.TreeStyle.ENCHANTED_STEPPED, 9, 2));
             }
-            trees.add(new SaplingTreeGenerator(log, leaves.get(0), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 24, 3));
+            trees.add(new SaplingTreeGenerator(log, BygWood.BLUE_ENCHANTED.leaves(), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 24, 3));
         }
         return trees.toArray(new WorldGenAbstractTree[0]);
     }

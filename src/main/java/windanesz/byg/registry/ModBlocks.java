@@ -800,26 +800,6 @@ public final class ModBlocks {
         return null;
     }
 
-    private static Supplier<IBlockState> state(Supplier<Block> blockSupplier) {
-        return () -> blockSupplier.get().getDefaultState();
-    }
-
-    private static Supplier<IBlockState> constantState(IBlockState state) {
-        return () -> state;
-    }
-
-    private static BlockGeneratedSaplingBase.TreePlacement tree(Supplier<IBlockState> logState, Supplier<IBlockState> leavesState,
-                                                                SaplingTreeGenerator.TreeStyle style, int minHeight,
-                                                                int extraHeight, double chance) {
-        return BlockGeneratedSaplingBase.tree(new SaplingTreeGenerator(logState, leavesState, style, minHeight, extraHeight), chance);
-    }
-
-    private static BlockGeneratedSaplingBase.TreePlacement tree(Supplier<IBlockState> logState, Supplier<IBlockState> leavesState,
-                                                                Supplier<IBlockState> accentLeavesState, SaplingTreeGenerator.TreeStyle style,
-                                                                int minHeight, int extraHeight, double chance) {
-        return BlockGeneratedSaplingBase.tree(new SaplingTreeGenerator(logState, leavesState, accentLeavesState, style, minHeight, extraHeight), chance);
-    }
-
     private static Block createGeneratedSapling(String name, BlockGeneratedSaplingBase.TreePlacement[] placements,
                                                 double bonemealSuccessChance, BiPredicate<World, BlockPos> growthCondition) {
         return new BlockGeneratedSaplingBase(name, placements, bonemealSuccessChance, growthCondition);
@@ -885,8 +865,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockWoodSlabBase("aspen_slab", 0));
 
         registerBlock(registry, createGeneratedSapling("aspen_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.aspen_log), state(() -> ModBlocks.aspen_leaves), SaplingTreeGenerator.TreeStyle.ROUND, 5, 2, 0.5),
-                tree(state(() -> ModBlocks.aspen_log), state(() -> ModBlocks.aspen_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 7, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.ASPEN, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.ASPEN_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockStairsBase("aspen_stairs", Material.WOOD, SoundType.WOOD, "axe", 0, 2.0f, 10.0f, true));
 
@@ -923,7 +903,7 @@ public final class ModBlocks {
             registerBlock(registry, new BlockPlanksBase("baobab_planks",  0, 2.0f, 8.0f, 255, true));
 
             registerBlock(registry, createGeneratedSapling("baobab_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.baobab_log), state(() -> ModBlocks.baobab_leaves), SaplingTreeGenerator.TreeStyle.BAOBAB, 7, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                    BlockGeneratedSaplingBase.tree(BygTrees.BAOBAB, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
             registerBlock(registry, new BlockWoodSlabBase("baobab_slab", 0));
         }
@@ -965,9 +945,9 @@ public final class ModBlocks {
             registerBlock(registry, new BlockFenceGateBase("blue_enchanted_gate_closed", true, 1, 1.0f, 10.0f, () -> ModBlocks.blue_enchanted_gate, () -> ModBlocks.blue_enchanted_gate));
 
             registerBlock(registry, createGeneratedSapling("blue_enchanted_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_blue), SaplingTreeGenerator.TreeStyle.ENCHANTED_STEPPED, 9, 2, 0.35),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_blue), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 12, 2, 0.5),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_blue), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 16, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                    BlockGeneratedSaplingBase.tree(BygTrees.BLUE_ENCHANTED_STEPPED, 0.35),
+                    BlockGeneratedSaplingBase.tree(BygTrees.BLUE_ENCHANTED_TIERED, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.BLUE_ENCHANTED_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
             registerBlock(registry, new BlockStairsBase("blue_enchanted_stairs", Material.WOOD, SoundType.WOOD, "axe", 0, 2.0f, 10.0f, true));
 
@@ -985,12 +965,12 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("bluesage", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("blue_spruce_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_blue), SaplingTreeGenerator.TreeStyle.CONIFER, 6, 2, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_blue), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 8, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.BLUE_SPRUCE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.BLUE_SPRUCE_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, createGeneratedSapling("brown_birch_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.brown_birch_leaves), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.brown_birch_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 1, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.BROWN_BIRCH, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.BROWN_BIRCH_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
         registerBlock(registry, new BlockShearableLeavesBase("brown_birch_leaves", 1, () -> ModBlocks.brown_birch_leaves, () -> new ItemStack(ModBlocks.brown_birch_sapling, 1), 0.03, 1));
 
@@ -1047,7 +1027,7 @@ public final class ModBlocks {
 
             registerBlock(registry, new BlockPlanksBase("cika_planks",  0, 2.0f, 10.0f, 255, false));
 
-            SaplingTreeGenerator cikaTree = new SaplingTreeGenerator(state(() -> ModBlocks.cika_log), state(() -> ModBlocks.cika_leaves), SaplingTreeGenerator.TreeStyle.CIKA, 22, 6);
+            SaplingTreeGenerator cikaTree = BygTrees.CIKA;
             BlockGeneratedSaplingBase.TreePlacement[] cikaPlacements = new BlockGeneratedSaplingBase.TreePlacement[]{
                 BlockGeneratedSaplingBase.tree((world, random, center) -> cikaTree.growFromSaplings(world, random, center, ModBlocks.cika_sapling), 1.0)};
             registerBlock(registry, createGeneratedSapling("cika_sapling", cikaPlacements, 0.4, cikaPlacements,
@@ -1093,10 +1073,10 @@ public final class ModBlocks {
             registerBlock(registry, new BlockWoodSlabBase("cypress_slab", 0));
 
             registerBlock(registry, createGeneratedSapling("cypress_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.cypress_log), state(() -> ModBlocks.cypress_leaves), SaplingTreeGenerator.TreeStyle.DROOPING, 7, 2, 0.5),
-                    tree(state(() -> ModBlocks.cypress_log), state(() -> ModBlocks.cypress_leaves), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 9, 2, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.cypress_log), state(() -> ModBlocks.cypress_leaves), SaplingTreeGenerator.TreeStyle.DROOPING, 7, 2, 0.5),
-                    tree(state(() -> ModBlocks.cypress_log), state(() -> ModBlocks.cypress_leaves), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 9, 2, 1.0)}, BlockGeneratedSaplingBase.alwaysGrow()));
+                    BlockGeneratedSaplingBase.tree(BygTrees.CYPRESS, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.CYPRESS_TALL, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
+                    BlockGeneratedSaplingBase.tree(BygTrees.CYPRESS, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.CYPRESS_TALL, 1.0)}, BlockGeneratedSaplingBase.alwaysGrow()));
         }
 
         registerBlock(registry, new BlockSimpleFlowerBase("daffodil", BYGTab.tab, 0.0f));
@@ -1107,12 +1087,12 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("delphinium", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("dry_brown_oak_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_dry_brown), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_dry_brown), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.DRY_BROWN_OAK, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.DRY_BROWN_OAK_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
         registerBlock(registry, createGeneratedSapling("dry_green_oak_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_dry_green), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_dry_green), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.DRY_GREEN_OAK, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.DRY_GREEN_OAK_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
         if (Config.isEbonyContentEnabled()) {
             registerBlock(registry, new BlockWoodDoorBase("ebony_door_bottom", 1, 2.0f, 8.0f, () -> ModItems.ebony_door));
 
@@ -1137,7 +1117,7 @@ public final class ModBlocks {
             registerBlock(registry, new BlockPlanksBase("ebony_planks",  1, 2.0f, 8.0f, 255, true));
 
             registerBlock(registry, createGeneratedSapling("ebony_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.ebony_log), state(() -> ModBlocks.ebony_leaves), SaplingTreeGenerator.TreeStyle.EBONY, 11, 4, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                    BlockGeneratedSaplingBase.tree(BygTrees.EBONY, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
             registerBlock(registry, new BlockWoodSlabBase("ebony_slab", 1));
         }
@@ -1184,8 +1164,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockWoodSlabBase("fir_slab", 1));
 
         registerBlock(registry, createGeneratedSapling("fir_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.fir_log), state(() -> ModBlocks.fir_leaves), SaplingTreeGenerator.TreeStyle.FIR, 15, 0, 0.5),
-                tree(state(() -> ModBlocks.fir_log), state(() -> ModBlocks.fir_leaves), SaplingTreeGenerator.TreeStyle.FIR, 20, 0, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.FIR, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.FIR_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodBase("fir_wood", 1, 2.0f, 10.0f, 255, true));
 
@@ -1285,8 +1265,8 @@ public final class ModBlocks {
             registerBlock(registry, new BlockPlanksBase("great_oak_planks",  0, 2.0f, 10.0f, 255, false));
 
             registerBlock(registry, createGeneratedSapling("great_oak_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.great_oak_log), state(() -> ModBlocks.great_oak_leaves), SaplingTreeGenerator.TreeStyle.GREAT_OAK, 0, 0, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.great_oak_log), state(() -> ModBlocks.great_oak_leaves), SaplingTreeGenerator.TreeStyle.GREAT_OAK, 0, 0, 1.0)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89),
+                    BlockGeneratedSaplingBase.tree(BygTrees.GREAT_OAK, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
+                    BlockGeneratedSaplingBase.tree(BygTrees.GREAT_OAK, 1.0)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89),
                     BlockGeneratedSaplingBase.squareFormation(3)));
 
             registerBlock(registry, new BlockWoodSlabBase("great_oak_slab", 0));
@@ -1377,8 +1357,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("holly_planks",  1, 2.0f, 8.0f, 255, true));
 
         registerBlock(registry, createGeneratedSapling("holly_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.holly_log), state(() -> ModBlocks.holly_leaves), state(() -> ModBlocks.holly_berry_leaves), SaplingTreeGenerator.TreeStyle.HOLLY, 12, 2, 0.5),
-                tree(state(() -> ModBlocks.holly_log), state(() -> ModBlocks.holly_leaves), state(() -> ModBlocks.holly_berry_leaves), SaplingTreeGenerator.TreeStyle.HOLLY, 16, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.HOLLY, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.HOLLY_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("holly_slab", 0));
 
@@ -1410,7 +1390,7 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("ironwood_planks",  1, 2.0f, 8.0f, 255, true));
 
         registerBlock(registry, createGeneratedSapling("ironwood_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.ironwood_log), state(() -> ModBlocks.ironwood_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 7, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.IRONWOOD, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("ironwood_slab", 1));
 
@@ -1439,12 +1419,12 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("jacaranda_planks",  0, 2.0f, 10.0f, 255, false));
 
         registerBlock(registry, createGeneratedSapling("jacaranda_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA, 6, 2, 0.5),
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA, 8, 2, 1.0),
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA_TALL, 8, 2, 0.6)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA, 6, 2, 0.5),
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA, 8, 2, 1.0),
-                tree(state(() -> ModBlocks.jacaranda_log), state(() -> ModBlocks.jacaranda_leaves), SaplingTreeGenerator.TreeStyle.JACARANDA_TALL, 8, 2, 0.6)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA_LARGE, 1.0),
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA_TALL, 0.6)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA_LARGE, 1.0),
+                BlockGeneratedSaplingBase.tree(BygTrees.JACARANDA_TALL, 0.6)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
 
         registerBlock(registry, new BlockWoodSlabBase("jacaranda_slab", 0));
 
@@ -1507,7 +1487,7 @@ public final class ModBlocks {
         registerBlock(registry, new BlockWoodSlabBase("mahogany_slab", 0));
 
         registerBlock(registry, createGeneratedSapling("mahogany_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.mahogany_log), state(() -> ModBlocks.mahogany_leaves), SaplingTreeGenerator.TreeStyle.MAHOGANY, 10, 4, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.MAHOGANY, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockStairsBase("mahogany_stairs", Material.WOOD, SoundType.WOOD, "axe", 0, 2.0f, 10.0f, true));
 
@@ -1539,8 +1519,8 @@ public final class ModBlocks {
             registerBlock(registry, new BlockPlanksBase("mangrove_planks",  0, 2.0f, 10.0f, 255, false));
 
             registerBlock(registry, createGeneratedSapling("mangrove_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.mangrove_log), state(() -> ModBlocks.mangrove_leaves), SaplingTreeGenerator.TreeStyle.MANGROVE, 6, 2, 0.5),
-                    tree(state(() -> ModBlocks.mangrove_log), state(() -> ModBlocks.mangrove_leaves), SaplingTreeGenerator.TreeStyle.MANGROVE, 8, 2, 1.0)},
+                    BlockGeneratedSaplingBase.tree(BygTrees.MANGROVE, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.MANGROVE_LARGE, 1.0)},
                     0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.85)));
 
             registerBlock(registry, new BlockWoodSlabBase("mangrove_slab", 0));
@@ -1628,8 +1608,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("orange_amaranth", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("orange_birch_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.orange_birch_leaves), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.orange_birch_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 1, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_BIRCH, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_BIRCH_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
         registerBlock(registry, new BlockShearableLeavesBase("orange_birch_leaves", 1, () -> ModBlocks.orange_birch_leaves, () -> new ItemStack(ModBlocks.orange_birch_sapling, 1), 0.03, 1));
 
@@ -1638,12 +1618,12 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("orange_daisy", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("orange_oak_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_orange), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_orange), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.2, 0.7)));
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_OAK, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_OAK_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.2, 0.7)));
 
         registerBlock(registry, createGeneratedSapling("orange_spruce_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_orange), SaplingTreeGenerator.TreeStyle.CONIFER, 6, 2, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_orange), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 8, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_SPRUCE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.ORANGE_SPRUCE_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockShearableLeavesBase("orchard_leaves", 0, () -> ModBlocks.orchard_leaves, () -> new ItemStack(net.minecraft.init.Blocks.AIR, 1), 0.0, 1));
 
@@ -1652,7 +1632,7 @@ public final class ModBlocks {
         registerBlock(registry, new BlockShearableLeavesBase("orchard_leaves_flowering", 0, () -> ModBlocks.orchard_leaves_flowering, () -> new ItemStack(ModBlocks.orchard_sapling, 1), 0.03, 1));
 
         registerBlock(registry, createGeneratedSapling("orchard_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.orchard_leaves_flowering), SaplingTreeGenerator.TreeStyle.ROUND, 5, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.ORCHARD, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockSimpleFlowerBase("osiria_rose", BYGTab.tab, 0.0f));
 
@@ -1686,7 +1666,7 @@ public final class ModBlocks {
             registerBlock(registry, new BlockWoodSlabBase("palm_slab", 0));
 
             registerBlock(registry, createGeneratedSapling("palm_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.palm_log), state(() -> ModBlocks.palm_leaves), SaplingTreeGenerator.TreeStyle.PALM, 11, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                    BlockGeneratedSaplingBase.tree(BygTrees.PALM, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
             registerBlock(registry, new BlockStairsBase("palm_stairs", Material.WOOD, SoundType.WOOD, "axe", 0, 2.0f, 10.0f, true));
 
@@ -1706,7 +1686,7 @@ public final class ModBlocks {
         registerBlock(registry, new BlockDirectionalLogBase("palo_verde_log", 0, false));
 
         registerBlock(registry, createGeneratedSapling("palo_verde_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.palo_verde_log), state(() -> ModBlocks.palo_verde_leaves_flowering), SaplingTreeGenerator.TreeStyle.ROUND, 5, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.PALO_VERDE, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockBasicBase("pasture_dirt", Material.GROUND, SoundType.GROUND, "shovel", 0, 0.5f, 8.0f, 0.0f, 255, true) {
             @Override
@@ -1786,9 +1766,9 @@ public final class ModBlocks {
 
         if (Config.isEnchantedTreeContentEnabled()) {
             registerBlock(registry, createGeneratedSapling("pink_enchanted_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_pink), SaplingTreeGenerator.TreeStyle.ENCHANTED_STEPPED, 9, 2, 0.35),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_pink), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 12, 2, 0.5),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_pink), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 16, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                    BlockGeneratedSaplingBase.tree(BygTrees.PINK_ENCHANTED_STEPPED, 0.35),
+                    BlockGeneratedSaplingBase.tree(BygTrees.PINK_ENCHANTED_TIERED, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.PINK_ENCHANTED_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
         }
 
         registerBlock(registry, new BlockFallingBase("pink_sand", Material.SAND, SoundType.SAND, "shovel", 0, 1.0f, 5.0f, 0.0f, 255));
@@ -1802,8 +1782,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("pink_anemone", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("pink_cherry_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.cherry_log), state(() -> ModBlocks.cherry_leaves_pink), SaplingTreeGenerator.TreeStyle.CHERRY_BLOSSOM, 5, 2, 0.5),
-                tree(state(() -> ModBlocks.cherry_log), state(() -> ModBlocks.cherry_leaves_pink), SaplingTreeGenerator.TreeStyle.CHERRY_BLOSSOM, 7, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
+                BlockGeneratedSaplingBase.tree(BygTrees.PINK_CHERRY, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.PINK_CHERRY_LARGE, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
 
         registerBlock(registry, new BlockSimpleFlowerBase("pink_daffodil", BYGTab.tab, 0.0f));
 
@@ -1846,9 +1826,9 @@ public final class ModBlocks {
 
         if (Config.isEnchantedTreeContentEnabled()) {
             registerBlock(registry, createGeneratedSapling("purple_enchanted_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_purple), SaplingTreeGenerator.TreeStyle.ENCHANTED_STEPPED, 9, 2, 0.35),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_purple), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 12, 2, 0.5),
-                    tree(state(() -> ModBlocks.enchanted_log), state(() -> ModBlocks.enchanted_leaves_purple), SaplingTreeGenerator.TreeStyle.ENCHANTED_TIERED, 16, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                    BlockGeneratedSaplingBase.tree(BygTrees.PURPLE_ENCHANTED_STEPPED, 0.35),
+                    BlockGeneratedSaplingBase.tree(BygTrees.PURPLE_ENCHANTED_TIERED, 0.5),
+                    BlockGeneratedSaplingBase.tree(BygTrees.PURPLE_ENCHANTED_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
         }
 
         registerBlock(registry, createDirectionalGlowshroomBlock("purple_glowshroom", 0.8f, () -> ModItems.purple_glowshroom, 4, null));
@@ -1890,14 +1870,14 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("rainbow_eucalyptus_planks",  0, 2.0f, 8.0f, 255, true));
 
         registerBlock(registry, createGeneratedSapling("rainbow_eucalyptus_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.rainbow_eucalyptus_log), state(() -> ModBlocks.rainbow_eucalyptus_leaves), SaplingTreeGenerator.TreeStyle.ROUND, 7, 2, 0.5),
-                tree(state(() -> ModBlocks.rainbow_eucalyptus_log), state(() -> ModBlocks.rainbow_eucalyptus_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 9, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.RAINBOW_EUCALYPTUS, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.RAINBOW_EUCALYPTUS_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("rainbow_eucalyptus_slab", 0));
 
         registerBlock(registry, createGeneratedSapling("red_birch_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.red_birch_leaves), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.red_birch_leaves), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 1, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_BIRCH, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_BIRCH_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
         registerBlock(registry, createPlantableFallingBlock("red_cracked_sand", Material.SAND, SoundType.SAND, "shovel", 0, 1.0f, 5.0f, 0.0f, 255, true));
 
@@ -1912,18 +1892,18 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("red_corn_flower", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("red_maple_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_red), SaplingTreeGenerator.TreeStyle.MAPLE, 7, 2, 0.5),
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_red), SaplingTreeGenerator.TreeStyle.MAPLE, 9, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_MAPLE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_MAPLE_LARGE, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
 
         registerBlock(registry, createGeneratedSapling("red_oak_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_red), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getDefaultState()), state(() -> ModBlocks.oak_leaves_red), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.2, 0.7)));
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_OAK, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_OAK_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.2, 0.7)));
 
         registerBlock(registry, new BlockSimpleFlowerBase("red_orchid", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("red_spruce_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_red), SaplingTreeGenerator.TreeStyle.CONIFER, 6, 2, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_red), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 8, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_SPRUCE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.RED_SPRUCE_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         if (Config.isRedwoodContentEnabled()) {
             registerBlock(registry, new BlockFenceBase("redwood_fence", 0, 2.0f, 8.0f, false));
@@ -2047,10 +2027,10 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("silver_vase_flower", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("silver_maple_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_silver), SaplingTreeGenerator.TreeStyle.MAPLE, 7, 2, 0.5),
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_silver), SaplingTreeGenerator.TreeStyle.MAPLE, 9, 2, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_silver), SaplingTreeGenerator.TreeStyle.MAPLE, 7, 2, 0.5),
-                tree(state(() -> ModBlocks.maple_log), state(() -> ModBlocks.maple_leaves_silver), SaplingTreeGenerator.TreeStyle.MAPLE, 9, 2, 1.0)},
+                BlockGeneratedSaplingBase.tree(BygTrees.SILVER_MAPLE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.SILVER_MAPLE_LARGE, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
+                BlockGeneratedSaplingBase.tree(BygTrees.SILVER_MAPLE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.SILVER_MAPLE_LARGE, 1.0)},
                 BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35), BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
         if (Config.isSkyrisContentEnabled()) {
             registerBlock(registry, new BlockWoodDoorBase("skyris_door_bottom", 1, 2.0f, 8.0f, () -> ModItems.skyris_door));
@@ -2080,10 +2060,10 @@ public final class ModBlocks {
             registerBlock(registry, new BlockPlanksBase("skyris_planks",  0, 2.0f, 10.0f, 255, false));
 
             registerBlock(registry, createGeneratedSapling("skyris_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.skyris_log), state(() -> ModBlocks.skyris_leaves), SaplingTreeGenerator.TreeStyle.SKYRIS, 8, 2, 0.5),
-                tree(state(() -> ModBlocks.skyris_log), state(() -> ModBlocks.skyris_leaves), SaplingTreeGenerator.TreeStyle.SKYRIS, 11, 2, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.skyris_log), state(() -> ModBlocks.skyris_leaves), SaplingTreeGenerator.TreeStyle.SKYRIS, 8, 2, 0.5),
-                tree(state(() -> ModBlocks.skyris_log), state(() -> ModBlocks.skyris_leaves), SaplingTreeGenerator.TreeStyle.SKYRIS, 11, 2, 1.0)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
+                BlockGeneratedSaplingBase.tree(BygTrees.SKYRIS, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.SKYRIS_TALL, 1.0)}, 0.4, new BlockGeneratedSaplingBase.TreePlacement[]{
+                BlockGeneratedSaplingBase.tree(BygTrees.SKYRIS, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.SKYRIS_TALL, 1.0)}, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(-0.5, 0.35)));
 
             registerBlock(registry, new BlockWoodSlabBase("skyris_slab", 1));
         }
@@ -2282,8 +2262,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("white_celosia", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("white_cherry_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.cherry_log), state(() -> ModBlocks.cherry_leaves_white), SaplingTreeGenerator.TreeStyle.CHERRY_BLOSSOM, 5, 2, 0.5),
-                tree(state(() -> ModBlocks.cherry_log), state(() -> ModBlocks.cherry_leaves_white), SaplingTreeGenerator.TreeStyle.CHERRY_BLOSSOM, 7, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
+                BlockGeneratedSaplingBase.tree(BygTrees.WHITE_CHERRY, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.WHITE_CHERRY_LARGE, 1.0)}, 0.4, BlockGeneratedSaplingBase.outsideScaledTemperatureRange(0.7, 0.89)));
 
         registerBlock(registry, new BlockBasicBase("white_chiseled_sandstone", Material.ROCK, SoundType.STONE, "pickaxe", 1, 1.5f, 10.0f, 0.0f, 2, true));
 
@@ -2324,8 +2304,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("willow_planks",  0, 2.0f, 10.0f, 255, false));
 
         registerBlock(registry, createGeneratedSapling("willow_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.willow_log), state(() -> ModBlocks.willow_leaves), SaplingTreeGenerator.TreeStyle.WILLOW, 6, 2, 0.5),
-                tree(state(() -> ModBlocks.willow_log), state(() -> ModBlocks.willow_leaves), SaplingTreeGenerator.TreeStyle.WILLOW, 8, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.WILLOW, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.WILLOW_LARGE, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("willow_slab", 0));
 
@@ -2362,15 +2342,15 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("witch_hazel_planks",  1, 2.0f, 8.0f, 255, true));
 
         registerBlock(registry, createGeneratedSapling("witch_hazel_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.witch_hazel_log), state(() -> ModBlocks.witch_hazel_leaves_blooming), SaplingTreeGenerator.TreeStyle.DROOPING, 6, 2, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.WITCH_HAZEL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("witch_hazel_slab", 1));
 
         registerBlock(registry, createLightBreakingFlowerBlock("wood_blewit", BYGTab.tab));
 
         registerBlock(registry, createGeneratedSapling("yellow_birch_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.birch_leaves_yellow), SaplingTreeGenerator.TreeStyle.ROUND, 5, 1, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(2)), state(() -> ModBlocks.birch_leaves_yellow), SaplingTreeGenerator.TreeStyle.TALL_ROUND, 6, 1, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.YELLOW_BIRCH, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.YELLOW_BIRCH_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockPetalBase("yellow_petal"));
 
@@ -2379,8 +2359,8 @@ public final class ModBlocks {
         registerBlock(registry, new BlockSimpleFlowerBase("yellow_daffodil", BYGTab.tab, 0.0f));
 
         registerBlock(registry, createGeneratedSapling("yellow_spruce_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_yellow), SaplingTreeGenerator.TreeStyle.CONIFER, 6, 2, 0.5),
-                tree(constantState(Blocks.LOG.getStateFromMeta(1)), state(() -> ModBlocks.spruce_leaves_yellow), SaplingTreeGenerator.TreeStyle.TALL_CONIFER, 8, 3, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.YELLOW_SPRUCE, 0.5),
+                BlockGeneratedSaplingBase.tree(BygTrees.YELLOW_SPRUCE_TALL, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockSimpleFlowerBase("yellow_tulip", BYGTab.tab, 0.0f));
         registerBlock(registry, new BlockWoodDoorBase("zelkova_door_bottom", 1, 2.0f, 8.0f, () -> ModItems.zelkova_door));
@@ -2406,7 +2386,7 @@ public final class ModBlocks {
         registerBlock(registry, new BlockPlanksBase("zelkova_planks",  0, 1.0f, 10.0f, 255, false));
 
         registerBlock(registry, createGeneratedSapling("zelkova_sapling", new BlockGeneratedSaplingBase.TreePlacement[]{
-                tree(state(() -> ModBlocks.zelkova_log), state(() -> ModBlocks.zelkova_leaves), SaplingTreeGenerator.TreeStyle.ZELKOVA, 0, 0, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
+                BlockGeneratedSaplingBase.tree(BygTrees.ZELKOVA, 1.0)}, 0.4, BlockGeneratedSaplingBase.alwaysGrow()));
 
         registerBlock(registry, new BlockWoodSlabBase("zelkova_slab", 0));
     }

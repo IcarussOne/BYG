@@ -17,7 +17,7 @@ import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -64,9 +64,7 @@ public class BiomeTropicalMountains
                             Blocks.LOG.getStateFromMeta(3), Blocks.LEAVES.getStateFromMeta(3), true);
         }
         return rand.nextInt(5) == 0 ? new CustomTree()
-                : new SaplingTreeGenerator(() -> ModBlocks.mahogany_log.getDefaultState(),
-                        () -> ModBlocks.mahogany_leaves.getDefaultState(),
-                        SaplingTreeGenerator.TreeStyle.TROPICAL_MOUNTAIN, 10, 4);
+                : BygTrees.MAHOGANY_MOUNTAIN;
     }
 
     static class CustomTree

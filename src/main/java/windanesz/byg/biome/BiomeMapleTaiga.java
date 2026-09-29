@@ -6,8 +6,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -49,9 +48,7 @@ public class BiomeMapleTaiga
 
     public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
         boolean silver = rand.nextInt(4) == 0;
-        return new SaplingTreeGenerator(() -> ModBlocks.maple_log.getDefaultState(),
-                () -> (silver ? ModBlocks.maple_leaves_silver : ModBlocks.maple_leaves_red).getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.MAPLE, 7, 3);
+        return silver ? BygTrees.SILVER_MAPLE_TAIGA : BygTrees.RED_MAPLE_TAIGA;
     }
 
 }

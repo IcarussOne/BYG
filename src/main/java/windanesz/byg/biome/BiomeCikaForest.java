@@ -6,7 +6,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
+import windanesz.byg.worldgen.treegenerator.BygWood;
 import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
 
 import java.util.Random;
@@ -52,8 +52,7 @@ public class BiomeCikaForest
         int roll = rand.nextInt(10);
         int minHeight = roll < 2 ? 13 : roll < 6 ? 22 : 27;
         int extraHeight = roll < 2 ? 4 : 5;
-        return new SaplingTreeGenerator(() -> ModBlocks.cika_log.getDefaultState(), () -> ModBlocks.cika_leaves.getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.CIKA, minHeight, extraHeight);
+        return BygWood.CIKA.tree(SaplingTreeGenerator.TreeStyle.CIKA, minHeight, extraHeight);
     }
 
 }

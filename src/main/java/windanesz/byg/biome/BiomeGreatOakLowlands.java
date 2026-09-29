@@ -8,16 +8,13 @@ import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
 public class BiomeGreatOakLowlands
         extends Biome {
-    private static final WorldGenAbstractTree GREAT_OAK_TREE = new SaplingTreeGenerator(
-            () -> ModBlocks.great_oak_log.getDefaultState(),
-            () -> ModBlocks.great_oak_leaves.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.GREAT_OAK, 0, 0);
+    private static final WorldGenAbstractTree GREAT_OAK_TREE = BygTrees.GREAT_OAK;
     private static final WorldGenAbstractTree VANILLA_OAK_TREE = new WorldGenTrees(false);
 
     public BiomeGreatOakLowlands() {

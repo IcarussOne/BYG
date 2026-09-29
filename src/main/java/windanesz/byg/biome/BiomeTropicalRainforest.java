@@ -20,8 +20,7 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -77,9 +76,7 @@ public class BiomeTropicalRainforest
             return new WorldGenTrees(false, 7 + rand.nextInt(5), Blocks.LOG.getStateFromMeta(3),
                     Blocks.LEAVES.getStateFromMeta(3), true);
         }
-        return new SaplingTreeGenerator(() -> ModBlocks.mahogany_log.getDefaultState(),
-                () -> ModBlocks.mahogany_leaves.getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.MAHOGANY, 10, 4);
+        return BygTrees.MAHOGANY;
     }
 
     @Override

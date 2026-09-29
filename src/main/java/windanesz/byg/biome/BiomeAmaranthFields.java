@@ -3,8 +3,7 @@ package windanesz.byg.biome;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -33,11 +32,7 @@ public class BiomeAmaranthFields
         if (!windanesz.byg.Config.isWoodSetEnabled("jacaranda")) {
             return TREE_FEATURE;
         }
-        return new SaplingTreeGenerator(
-                () -> ModBlocks.jacaranda_log.getDefaultState(),
-                () -> ModBlocks.jacaranda_leaves.getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.JACARANDA,
-                rand.nextInt(3) != 0 ? 8 : 6, 2);
+        return rand.nextInt(3) != 0 ? BygTrees.JACARANDA_LARGE : BygTrees.JACARANDA;
     }
 
 }

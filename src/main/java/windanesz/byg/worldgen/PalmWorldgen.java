@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import windanesz.byg.Config;
 import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -51,13 +51,7 @@ public final class PalmWorldgen {
         if (ground == null || !isPalmSand(world.getBlockState(ground)) || !BygTreePlacement.allowTrees(world, random, ground)) {
             return;
         }
-        newGenerator().generate(world, random, ground.up());
-    }
-
-    /** The generator shared by world generation and the Tropical Islands biome tree hook. */
-    public static SaplingTreeGenerator newGenerator() {
-        return new SaplingTreeGenerator(() -> ModBlocks.palm_log.getDefaultState(),
-                () -> ModBlocks.palm_leaves.getDefaultState(), SaplingTreeGenerator.TreeStyle.PALM, 11, 3);
+        BygTrees.PALM.generate(world, random, ground.up());
     }
 
     private static BlockPos findSurface(World world, int x, int z) {

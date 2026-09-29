@@ -7,28 +7,15 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenSavannaTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
 public class BiomeBaobabSavanna
         extends Biome {
 
-    private static final WorldGenAbstractTree BAOBAB_TREE = new SaplingTreeGenerator(
-            () -> ModBlocks.baobab_log.getDefaultState(),
-            () -> ModBlocks.baobab_leaves.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.BAOBAB,
-            7,
-            2
-    );
-    private static final WorldGenAbstractTree YOUNG_BAOBAB_TREE = new SaplingTreeGenerator(
-            () -> ModBlocks.baobab_log.getDefaultState(),
-            () -> ModBlocks.baobab_leaves.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.BAOBAB_YOUNG,
-            6,
-            2
-    );
+    private static final WorldGenAbstractTree BAOBAB_TREE = BygTrees.BAOBAB;
+    private static final WorldGenAbstractTree YOUNG_BAOBAB_TREE = BygTrees.BAOBAB_YOUNG;
     private static final WorldGenAbstractTree ACACIA_TREE = new WorldGenSavannaTree(false);
 
     public BiomeBaobabSavanna() {

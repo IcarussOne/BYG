@@ -6,7 +6,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
+import windanesz.byg.worldgen.treegenerator.BygWood;
 import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
 
 import java.util.Random;
@@ -75,9 +75,6 @@ public class BiomeCherryGrove
             minHeight = 23;
             extraHeight = 2;
         }
-        return new SaplingTreeGenerator(
-                () -> ModBlocks.cherry_log.getDefaultState(),
-                () -> (pink ? ModBlocks.cherry_leaves_pink : ModBlocks.cherry_leaves_white).getDefaultState(),
-                style, minHeight, extraHeight);
+        return (pink ? BygWood.PINK_CHERRY : BygWood.WHITE_CHERRY).tree(style, minHeight, extraHeight);
     }
 }

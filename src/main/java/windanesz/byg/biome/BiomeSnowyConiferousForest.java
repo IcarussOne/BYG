@@ -6,8 +6,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -49,8 +48,6 @@ public class BiomeSnowyConiferousForest
 
     @Override
     public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
-        return new SaplingTreeGenerator(() -> ModBlocks.fir_log.getDefaultState(),
-                () -> ModBlocks.fir_leaves.getDefaultState(), SaplingTreeGenerator.TreeStyle.FIR,
-                rand.nextBoolean() ? 15 : 20, 0);
+        return rand.nextBoolean() ? BygTrees.FIR : BygTrees.FIR_TALL;
     }
 }

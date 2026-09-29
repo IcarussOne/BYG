@@ -11,7 +11,7 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.ArrayDeque;
 import java.util.HashSet;
@@ -195,10 +195,7 @@ public class BiomeSkyrisHighlands
 
     @Override
     public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
-        return new SaplingTreeGenerator(
-                () -> ModBlocks.skyris_log.getDefaultState(),
-                () -> ModBlocks.skyris_leaves.getDefaultState(),
-                SaplingTreeGenerator.TreeStyle.SKYRIS, rand.nextInt(3) == 0 ? 11 : 8, 2);
+        return rand.nextInt(3) == 0 ? BygTrees.SKYRIS_TALL : BygTrees.SKYRIS;
     }
 
 }

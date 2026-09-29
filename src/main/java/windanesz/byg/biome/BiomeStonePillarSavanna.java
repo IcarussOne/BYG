@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import windanesz.byg.registry.ModBlocks;
 import windanesz.byg.worldgen.*;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -25,34 +25,10 @@ public class BiomeStonePillarSavanna extends Biome {
     private static final WorldGenStonePillarWaterfall WATERFALL_GENERATOR = new WorldGenStonePillarWaterfall();
     private static final WorldGenTallGrass PILLAR_GRASS_GENERATOR = new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
     private static final WorldGenTallGrass GROUND_GRASS_GENERATOR = new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
-    private static final WorldGenAbstractTree DRY_BROWN_OAK_TREE = new SaplingTreeGenerator(
-            () -> Blocks.LOG.getDefaultState(),
-            () -> ModBlocks.oak_leaves_dry_brown.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.ROUND,
-            5,
-            1
-    );
-    private static final WorldGenAbstractTree DRY_BROWN_TALL_OAK_TREE = new SaplingTreeGenerator(
-            () -> Blocks.LOG.getDefaultState(),
-            () -> ModBlocks.oak_leaves_dry_brown.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.TALL_ROUND,
-            6,
-            2
-    );
-    private static final WorldGenAbstractTree DRY_GREEN_OAK_TREE = new SaplingTreeGenerator(
-            () -> Blocks.LOG.getDefaultState(),
-            () -> ModBlocks.oak_leaves_dry_green.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.ROUND,
-            5,
-            1
-    );
-    private static final WorldGenAbstractTree DRY_GREEN_TALL_OAK_TREE = new SaplingTreeGenerator(
-            () -> Blocks.LOG.getDefaultState(),
-            () -> ModBlocks.oak_leaves_dry_green.getDefaultState(),
-            SaplingTreeGenerator.TreeStyle.TALL_ROUND,
-            6,
-            2
-    );
+    private static final WorldGenAbstractTree DRY_BROWN_OAK_TREE = BygTrees.DRY_BROWN_OAK;
+    private static final WorldGenAbstractTree DRY_BROWN_TALL_OAK_TREE = BygTrees.DRY_BROWN_OAK_TALL;
+    private static final WorldGenAbstractTree DRY_GREEN_OAK_TREE = BygTrees.DRY_GREEN_OAK;
+    private static final WorldGenAbstractTree DRY_GREEN_TALL_OAK_TREE = BygTrees.DRY_GREEN_OAK_TALL;
 
     public BiomeStonePillarSavanna() {
         super(new Biome.BiomeProperties("Stone Pillar Savanna")

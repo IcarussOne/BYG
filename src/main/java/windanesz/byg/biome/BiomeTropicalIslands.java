@@ -13,6 +13,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 public class BiomeTropicalIslands
         extends Biome {
@@ -67,7 +68,7 @@ public class BiomeTropicalIslands
             // Decoration hands over the first free block above the surface, but tolerate the soil itself.
             Block here = world.getBlockState(pos).getBlock();
             BlockPos base = here == Blocks.GRASS || here == Blocks.DIRT ? pos.up() : pos;
-            return windanesz.byg.worldgen.PalmWorldgen.newGenerator().generate(world, par2Random, base);
+            return BygTrees.PALM.generate(world, par2Random, base);
         }
 
         protected boolean canGrowInto(Block blockType) {

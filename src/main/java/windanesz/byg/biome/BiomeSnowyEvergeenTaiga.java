@@ -16,8 +16,7 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import windanesz.byg.registry.ModBlocks;
-import windanesz.byg.worldgen.treegenerator.SaplingTreeGenerator;
+import windanesz.byg.worldgen.treegenerator.BygTrees;
 
 import java.util.Random;
 
@@ -73,12 +72,7 @@ public class BiomeSnowyEvergeenTaiga
                     root = root.down();
                 }
                 boolean matureTree = random.nextInt(3) != 0;
-                return new SaplingTreeGenerator(
-                        () -> ModBlocks.holly_log.getDefaultState(),
-                        () -> ModBlocks.holly_leaves.getDefaultState(),
-                        () -> ModBlocks.holly_berry_leaves.getDefaultState(),
-                        SaplingTreeGenerator.TreeStyle.HOLLY,
-                        matureTree ? 16 : 12, matureTree ? 3 : 2).generate(world, random, root);
+                return (matureTree ? BygTrees.HOLLY_TALL : BygTrees.HOLLY).generate(world, random, root);
             }
         };
     }
